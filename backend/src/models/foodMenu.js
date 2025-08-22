@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const slugify = require("slugify");
 
 const menuSchema = new mongoose.Schema({
   name: {
@@ -24,13 +25,23 @@ const menuSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ["lunch", "breakfast", "dessert", "snacks", "bbq","drinks"],
+    enum: ["lunch", "breakfast", "dessert", "snacks", "bbq", "drinks"],
     default: "lunch",
   },
   createdAt: {
     type: Date,
     default: Date.now,
   },
+  slug: {
+    type: String,
+    unique: true,
+  },
+});
+
+menuSchema.pre("save", function (next) {
+  if (!this.isModified("name")) return next();
+  this.slug = slugify(this.name, { lower: true, strict: true });
+  next();
 });
 
 module.exports = mongoose.model("Menu Items", menuSchema);

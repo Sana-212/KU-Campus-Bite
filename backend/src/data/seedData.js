@@ -1,5 +1,6 @@
 require("dotenv").config();
 const connectDB = require("../config/db.js");
+const slugify = require("slugify");
 
 const Canteen = require("../models/canteen.js");
 const Menu = require("../models/foodMenu.js");
@@ -16,7 +17,12 @@ const seedData = async () => {
     await Menu.deleteMany();
 
     // Insert canteens
-    const insertedCanteens = await Canteen.insertMany(canteenData);
+    const canteenWithSlugs = canteenData.map((c) => ({
+      ...c,
+      slug: slugify(c.name, { lower: true, strict: true }),
+    }));
+
+    const insertedCanteens = await Canteen.insertMany(canteenWithSlugs);
 
     // Map canteen name → ID
     const canteenMap = {};
@@ -29,6 +35,7 @@ const seedData = async () => {
     const menuWithIds = menuData.map((menu) => ({
       ...menu,
       canteenId: canteenMap[menu.canteenName],
+      slug: slugify(menu.name, { lower: true, strict: true }),
     }));
 
     //Insert menus

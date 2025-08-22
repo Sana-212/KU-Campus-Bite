@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const slugify = require("slugify");
 
 const canteenSchema = new mongoose.Schema({
   name: {
@@ -11,12 +12,22 @@ const canteenSchema = new mongoose.Schema({
   },
   contactNumber: {
     type: String,
-    required: [true, "whatsapp number must be provided "],
   },
   image: {
     type: String,
     default: "",
   },
+  slug:{
+    type:String,
+    unique:true
+  }
+});
+
+canteenSchema.pre("save", function (next) {
+  if (this.isModified("name")) {
+    this.slug = slugify(this.name, { lower: true, strict: true });
+  }
+  next();
 });
 
 module.exports = mongoose.model("Canteen", canteenSchema);
