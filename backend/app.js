@@ -5,6 +5,9 @@ const app = express();
 
 const menuRouter = require('./src/routes/menuRouter')
 const canteenRouter = require('./src/routes/canteenRouter')
+const cartRouter = require('./src/routes/cartRouter')
+const authRouter = require('./src/routes/authRouter')
+const checkoutRouter = require('./src/routes/checkoutRouter')
 
 app.use(express.json());
 
@@ -16,6 +19,9 @@ app.get('/',(req,res)=>{
 //Menu Api Route
 app.use('/api/menu',menuRouter)
 app.use('/api/canteen',canteenRouter)
+app.use('/api/cart',cartRouter)
+app.use('/api/auth',authRouter)
+app.use('/api',checkoutRouter)
 
 
 const connectDB = require("./src/config/db");

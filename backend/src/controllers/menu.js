@@ -26,26 +26,28 @@ const getAllMenu = async (req, res) => {
       { $limit: limit },
     ]);
 
-    res
+    return res
       .status(200)
       .json({ success: true, menuItems, total, totalPages, currentPage: page });
   } catch (error) {
-    res.status(500).json({ msg: "Server Error", error: error.message });
+    return res.status(500).json({ msg: "Server Error", error: error.message });
   }
 };
 
 const getSingleMenuItem = async (req, res) => {
   try {
     const { slug } = req.params;
-    const menuItem = await Menu.findOne({ slug }).populate("canteenId","name");
+    const menuItem = await Menu.findOne({ slug }).populate("canteenId", "name");
 
     if (!menuItem) {
-      res.status(404).json({ success: false, msg: "Menu Item Not Found" });
+      return res
+        .status(404)
+        .json({ success: false, msg: "Menu Item Not Found" });
     }
 
-    res.status(200).json({ success: true, menuItem });
+    return res.status(200).json({ success: true, menuItem });
   } catch (error) {
-    res.status(500).json({ success: false, msg: error.message });
+    return res.status(500).json({ success: false, msg: error.message });
   }
 };
 
