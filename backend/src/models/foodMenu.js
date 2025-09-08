@@ -34,7 +34,6 @@ const menuSchema = new mongoose.Schema({
   },
   slug: {
     type: String,
-    unique: true,
   },
 });
 
