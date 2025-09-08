@@ -24,6 +24,30 @@ const getAllMenu = async (req, res) => {
       { $sample: { size: total } },
       { $skip: skip },
       { $limit: limit },
+      {
+        $lookup: {
+          from: 'canteens', 
+          localField: 'canteenId',
+          foreignField: '_id',
+          as: 'canteenDetails',
+        },
+      },
+      {
+        $unwind: '$canteenDetails',
+      },
+      {
+        $project: {
+          _id: 1,
+          name: 1,
+          slug: 1,
+          canteenId: 1,
+          price: 1,
+          available: 1,
+          image: 1,
+          category: 1,
+          canteenSlug: '$canteenDetails.slug',
+        },
+      },
     ]);
 
     return res
@@ -34,21 +58,21 @@ const getAllMenu = async (req, res) => {
   }
 };
 
-const getSingleMenuItem = async (req, res) => {
-  try {
-    const { slug } = req.params;
-    const menuItem = await Menu.findOne({ slug }).populate("canteenId", "name");
+// const getSingleMenuItem = async (req, res) => {
+//   try {
+//     const { slug } = req.params;
+//     const menuItem = await Menu.findOne({ slug }).populate("canteenId", "name");
 
-    if (!menuItem) {
-      return res
-        .status(404)
-        .json({ success: false, msg: "Menu Item Not Found" });
-    }
+//     if (!menuItem) {
+//       return res
+//         .status(404)
+//         .json({ success: false, msg: "Menu Item Not Found" });
+//     }
 
-    return res.status(200).json({ success: true, menuItem });
-  } catch (error) {
-    return res.status(500).json({ success: false, msg: error.message });
-  }
-};
+//     return res.status(200).json({ success: true, menuItem });
+//   } catch (error) {
+//     return res.status(500).json({ success: false, msg: error.message });
+//   }
+// };
 
-module.exports = { getAllMenu, getSingleMenuItem };
+module.exports = { getAllMenu};

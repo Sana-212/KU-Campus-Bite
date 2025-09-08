@@ -1,10 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const { getAllMenu,getSingleMenuItem } = require("../controllers/menu");
+const { getAllMenu} = require("../controllers/menu");
+const {getMenuItemFromCanteen}= require("../controllers/canteen")
 
 router.route("/").get(getAllMenu);
 
-router.route("/:slug").get(getSingleMenuItem)
+// Gets a specific menu item from a specific canteen
+router.route("/:canteenSlug/:menuSlug").get(getMenuItemFromCanteen)
 
 module.exports = router;

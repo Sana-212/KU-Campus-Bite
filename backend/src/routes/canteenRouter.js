@@ -9,6 +9,4 @@ router.route('/:slug').get(getSingleCanteen)
 
 router.route('/:canteenSlug/:menuSlug').get(getMenuItemFromCanteen)
 
-
-
 module.exports = router;
