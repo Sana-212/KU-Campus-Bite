@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | KUCampusBite</title>
+  <link rel="stylesheet" href="KUCampusBite.css">
+</head>
+
+<body>
+
+  <div class="header-overlay-other-page">
+    <header>
+      <div class="logo">
+        <!-- <img src="Gemini_Generated_Image_gqcssegqcssegqcs.png" alt="Logo"> -->
+        <h3 class="black-text">KUCAMPUSBITE</h3>
+        <!-- <span class="site-title">KU Campus Bite</span> -->
+      </div>
+      <nav class="black-text">
+        <div class="dropdown">
+            <a href="menu.html">Menu </a>
+            </div>
+
+        <a href="#">About Us</a>
+        <div class="dropdown">
+          <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="cart-container">
+    <!-- Cart Table -->
+    <section class="cart-items">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="cart-table-body">
+
+        </tbody>
+      </table>
+
+      <div class="cart-actions">
+        <button id="shop-btn" class="shop-btn">⬅ Shop More</button>
+        <button id="clear-btn"class="clear-btn">Clear Cart</button>
+      </div>
+    </section>
+
+    <!-- Order Summary -->
+    <div>
+      <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="subtotal">₨ 0</span>
+        </div>
+        <div class="summary-line total">
+          <span>Total</span>
+          <span id="grand-total">₨ 0</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout ➡</button>
+      </aside>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-1">
+      <div>
+        <h1>KU Campus Bite</h1>
+        <p>Your campus food, delivered to you!</p>
+      </div>
+      <div class="links">
+        <h4>Quick Links</h4>
+        <a href="Menu">Menu</a>
+        <a href="Canteen">Canteens</a>
+        <a href="About us">About us</a>
+      </div>
+      <div>
+        <h4> Contact Us</h4>
+        <a href="kucampusbite@gmail.com">kucampusbite@gmail.com</a>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright-section">
+      &copy; 2025 KU Campus Bite. All rights reserved.
+    </div>
+  </footer>
+
+  <script type="module" src="cart.js"></script>
+</body>
+
+</html>

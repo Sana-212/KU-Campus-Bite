@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Item Detail</title>
+  <link rel="stylesheet" href="KUCampusBite.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="shortcut icon" href="../images/canteen_img/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="header-overlay-other-page">
+    <header>
+      <div class="logo">
+        <!-- <img src="Gemini_Generated_Image_gqcssegqcssegqcs.png" alt="Logo"> -->
+        <h3 class="black-text">KUCAMPUSBITE</h3>
+        <!-- <span class="site-title">KU Campus Bite</span> -->
+      </div>
+      <nav class="black-text">
+        <div class="dropdown">
+          <a href="menu.html">Menu </a>
+        </div>
+
+
+        <a href="#">About Us</a>
+        <div class="dropdown">
+          <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+
+          </div>
+        </div>
+
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container">
+    <article class="item-card">
+      <section class="item-grid">
+        <div class="media">
+          <img id="foodImage" alt="">
+        </div>
+        <div class="details">
+
+          <h1 id="foodName"></h1>
+          <div class="meta">
+            <i class="fa-solid fa-location-dot fa-2x" style="color: #c3041a"></i>
+            <span class="pill" id="canteenName"></span>
+
+
+          </div>
+          <div class="cta-row">
+            <div class="item-price">Rs
+              <span id="priceValue"></span>
+            </div>
+            <div class="qty">
+              <div class="stepper">
+                <button class="decrease-btn" id="decrement">−</button>
+                <input id="quantity" type="number" value="1" min="1">
+                <button class="increase-btn" id="increment">+</button>
+              </div>
+            </div>
+            <div class="btns">
+              <button class="add-to-cart-btn" id="addToCart"><i class="fa-solid fa-cart-shopping"
+                  style="color:#faf7f7; font-size:24px;"></i> Add to Cart</button>
+            </div>
+
+
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <section class="review-wrap">
+    <button class="btn review-toggle" id="toggleReview" aria-expanded="false" aria-controls="reviewForm">
+      <span class="span">Reviews</span>
+      <span class="chev" id="chev">▾</span>
+    </button>
+    <form class="review-form" id="reviewForm">
+      <div id="reviewsList"></div>
+      <button class="btn-form" id="reviewBtn"><i class="fa-solid fa-pen-to-square"
+          style="color:white; font-size:24px;"></i> Write a Review</button>
+
+    </form>
+  </section>
+  </article>
+  <div class="review-container">
+    <div class="field item-inline">
+      <label>Rating</label>
+      <div class="item-stars" id="stars" aria-label="Star rating">
+        <span class="star" data-v="1">★</span>
+        <span class="star" data-v="2">★</span>
+        <span class="star" data-v="3">★</span>
+        <span class="star" data-v="4">★</span>
+        <span class="star" data-v="5">★</span>
+      </div>
+    </div>
+    <div class="field">
+      <label for="reviewer">Your name</label>
+      <input type="text" id="reviewer" />
+    </div>
+    <div class="field">
+      <label for="reviewText">Your review</label>
+      <textarea id="reviewText" placeholder="Share your thoughts...">
+         </textarea>
+    </div>
+    <div class="inline">
+      <button type="button" class="btn-form" id="submitReview">Submit Review</button>
+      <button type="button" class="btn-form" id="cancelReview">Cancel</button>
+    </div>
+  </div>
+  <section class="food-section">
+    <h1>Recommended Items</h1>
+    <div class="food-slider">
+      <button class="slide-btn left" id="slide-left">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <div class="item-food-grid" id="food-grid"></div>
+      <button class="slide-btn right" id="slide-right">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+  </section>
+  <!-- ---------- Footer ---------- -->
+  <footer>
+    <div class="footer-1">
+      <div>
+        <h1>KU Campus Bite</h1>
+        <p>Your campus food, delivered to you!</p>
+      </div>
+      <div class="links">
+        <h4>Quick Links</h4>
+        <a href="Menu">Menu</a>
+        <a href="Canteen">Canteens</a>
+        <a href="About us">About us</a>
+      </div>
+      <div>
+        <h4> Contact Us</h4>
+        <a href="kucampusbite@gmail.com">kucampusbite@gmail.com</a>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright-section">
+      &copy; 2025 KU Campus Bite. All rights reserved.
+    </div>
+  </footer>
+
+
+  <script type="module" src="itemDetail.js"></script>
+</body>
+
+</html>

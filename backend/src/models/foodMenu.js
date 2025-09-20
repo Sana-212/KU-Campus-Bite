@@ -13,7 +13,7 @@ const menuSchema = new mongoose.Schema({
   canteenId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Canteen",
-    // required: [true,'Canteen name must be provided']
+    required: [true,'Canteen Id must be provided']
   },
   available: {
     type: Boolean,

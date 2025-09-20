@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KU Campus Bite</title>
+  <link rel="stylesheet" href="KUCampusBite.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="shortcut icon" href="../images/canteen_img/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="bg-container">
+    <div class="img-container">
+      <img src="./images/img1.jpg" alt="Logo" class="bg-img">
+    </div>
+    <div class="header-overlay">
+      <header>
+        <div class="logo">
+          <!-- <img src="Gemini_Generated_Image_gqcssegqcssegqcs.png" alt="Logo"> -->
+          <h3>KUCAMPUSBITE</h3>
+          <!-- <span class="site-title">KU Campus Bite</span> -->
+        </div>
+
+        <!-- <h1>KU CAMPUS BITE</h1> -->
+
+        <nav>
+          <div class="dropdown">
+            <a href="menu.html">Menu </a>
+          </div>
+
+          <a href="#">About Us</a>
+          <div class="dropdown">
+            <a href="#">Pages ▼</a>
+            <div class="dropdown-content">
+              <a href="login.html">Login</a>
+              <a href="signup.html">Sign Up</a>
+              <a href="blog.html">Blog</a>
+            </div>
+          </div>
+
+                  <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+          <a href="login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="text-overlay">
+      <h1>Good vibes start with good bites</h1>
+      <p>From campus hunger to canteen wonder—order what you crave, right here at KU!</p>
+      <div class="search-container">
+        <input type="search" class="search-input" placeholder="Search for canteen or food items">
+        <button class="search-btn"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <section class="canteen-section">
+    <h1>Featured Canteens</h1>
+    <div class="canteen-slider">
+      <button class="slide-btn left" id="slide-left">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <div class="canteen-grid" id="canteen-grid"></div>
+      <button class="slide-btn right" id="slide-right">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </div>
+    <a href="canteen.html" class="See-All-Canteen">See all Canteens -></a>
+  </section>
+
+  <section class="food-section">
+    <h1>Popular Dishes</h1>
+    <div class="food-grid" id="food-grid"></div>
+  </section>
+
+
+  <!-- ---------- Footer ---------- -->
+  <footer>
+    <div class="footer-1">
+      <div>
+        <h1>KU Campus Bite</h1>
+        <p>Your campus food, delivered to you!</p>
+      </div>
+      <div class="links">
+        <h4>Quick Links</h4>
+        <a href="Menu">Menu</a>
+        <a href="Canteen">Canteens</a>
+        <a href="About us">About us</a>
+      </div>
+      <div>
+        <h4> Contact Us</h4>
+        <a href="kucampusbite@gmail.com">kucampusbite@gmail.com</a>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright-section">
+      &copy; 2025 KU Campus Bite. All rights reserved.
+    </div>
+  </footer>
+
+  <script type="module" src="canteen.js"></script>
+  <script type="module" src="newhome.js"></script>
+
+</body>
+
+</html>

@@ -10,6 +10,10 @@ const orderSchema = new mongoose.Schema({
     ref: "Student",
     required: [true, "Student ID must be provided"],
   },
+  userName: {
+    type: String,
+    required:true
+  },
   items: [
     {
       menuItemId: {
