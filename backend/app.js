@@ -1,5 +1,6 @@
 require("dotenv").config();
-
+const cors = require("cors");
+const path = require("path");
 const express = require("express");
 const app = express();
 
@@ -15,13 +16,9 @@ const dashboardReportRouter = require("./src/routes/dashboardReportRouter");
 
 
 app.use(express.json());
+app.use(cors())
 
-//Home Page Route
-app.get("/", (req, res) => {
-  res.send(
-    '<and>Display <a href="/api/menu">Menu</a> and <a href="/api/canteen">Canteen</a> </h1>'
-  );
-});
+app.use('/images', express.static(path.join(__dirname, '..', 'KU-Frontend', 'images')));
 
 //Menu Api Route
 app.use("/api/menu", menuRouter);
@@ -30,19 +27,19 @@ app.use("/api/cart", cartRouter);
 app.use("/api/auth", authRouter);
 app.use("/api", checkoutRouter);
 app.use("/api/dashboard", dashboardRouter);
-app.use("/api/dashboard/Order", dashboardOrderRouter);
-app.use("/api/dashboard/Canteen", dashboardCanteenRouter);
-app.use("/api/dashboard/Report", dashboardReportRouter);
+app.use("/api/dashboard/order", dashboardOrderRouter);
+app.use("/api/dashboard/canteen", dashboardCanteenRouter);
+app.use("/api/dashboard/report", dashboardReportRouter);
 
 const connectDB = require("./src/config/db");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
     app.listen(PORT, () => {
-      console.log(`DB Connection Successful !! `);
+      console.log(`DB Connection Successful !! ${PORT} `);
     });
   } catch (error) {
     console.log("DB Connection failed", error);

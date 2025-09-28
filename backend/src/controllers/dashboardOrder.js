@@ -28,4 +28,4 @@ const getAllOrders = async (req, res) => {
   }
 };
 
-module.exports = { getAllOrders };
+module.exports = {getAllOrders};

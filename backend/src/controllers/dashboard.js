@@ -23,7 +23,7 @@ const getDashboardData = async (req, res) => {
     Order.aggregate([
       {
         $match: {
-          createdAt: { $gte: today },
+          placedAt: { $gte: today },
         },
       },
       {
@@ -38,7 +38,7 @@ const getDashboardData = async (req, res) => {
     Order.aggregate([
       {
         $match: {
-          createdAt: { $gte: last30Days },
+         placedAt: { $gte: last30Days },
         },
       },
       {
@@ -52,7 +52,7 @@ const getDashboardData = async (req, res) => {
     Order.aggregate([
       {
         $match: {
-          createdAt: { $gte: last30Days },
+          placedAt: { $gte: last30Days },
         },
       },
       { $unwind: "$items" },
@@ -75,12 +75,12 @@ const getDashboardData = async (req, res) => {
     Order.aggregate([
       {
         $match: {
-          createdAt: { $gte: last7Days },
+          placedAt: { $gte: last7Days },
         },
       },
       {
         $group: {
-          _id: { $dateToString: { format: "%Y-%m-%d", date: "$createdAt" } },
+          _id: { $dateToString: { format: "%Y-%m-%d", date: "$placedAt" } },
           count:{$sum:1}
         },
       },

@@ -1,5 +1,6 @@
 const Order = require("../models/order");
 const Canteen = require("../models/canteen");
+const Menu = require("../models/foodMenu")
 
 const displayCanteensWithOrders = async (req, res) => {
   try {
@@ -13,7 +14,7 @@ const displayCanteensWithOrders = async (req, res) => {
         },
       },
 
-      { $unwind: "$items " },
+      { $unwind: "$items" },
 
       {
         $lookup: {
@@ -30,7 +31,7 @@ const displayCanteensWithOrders = async (req, res) => {
         $lookup: {
           from: "canteens",
           localField: "menuItem.canteenId",
-          foreignField:" _id",
+          foreignField:"_id",
           as: "canteen",
         },
       },
@@ -66,7 +67,7 @@ const addCanteen = async (req, res) => {
   try {
     const { name, contactNumber, location } = req.body;
 
-    if (!name || !loaction || !contactNumber) {
+    if (!name || !location || !contactNumber) {
       return res.status(400).json({
         success: false,
         msg: "Canteen name, location and contact number are all required.",
@@ -140,7 +141,7 @@ const removeCanteen = async (req, res) => {
         .status(400)
         .json({ success: false, msg: "Canteen Id is required" });
     }
-    const removedCanteen = await Canteen.findOneAndDelete(canteenId);
+    const removedCanteen = await Canteen.findOneAndDelete({_id:canteenId});
 
     if (!removedCanteen) {
       return res.status(404).json({ success: false, msg: "Canteen not found" });
@@ -162,7 +163,6 @@ const displayMenuOfAllCanteens = async (req, res) => {
 
     const canteensWithMenus = await Promise.all(
       canteens.map(async (canteen) => {
-        F;
         const menuItems = await Menu.find({ canteenId: canteen._id });
         return {
           ...canteen.toObject(),
@@ -288,7 +288,7 @@ const removeMenuItemFromCanteen = async (req, res) => {
   }
 };
 
-module.export = {
+module.exports = {
   displayCanteensWithOrders,
   addCanteen,
   removeCanteen,

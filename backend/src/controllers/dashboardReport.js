@@ -13,7 +13,7 @@ const getReportData = async (req, res) => {
         Order.aggregate([
           {
             $match: {
-              createdAt: { $gte: startDate },
+              placedAt: { $gte: startDate },
             },
           },
           {
@@ -27,7 +27,7 @@ const getReportData = async (req, res) => {
         Order.aggregate([
           {
             $match: {
-              createdAt: { $gte: startDate },
+              placedAt: { $gte: startDate },
             },
           },
           { $unwind: "$items" },

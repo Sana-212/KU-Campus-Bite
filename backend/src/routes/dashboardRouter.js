@@ -4,4 +4,4 @@ const { getDashboardData } = require("../controllers/dashboard")
 
 router.route('/').get(getDashboardData)
 
-module.exports = router
+module.exports=router
