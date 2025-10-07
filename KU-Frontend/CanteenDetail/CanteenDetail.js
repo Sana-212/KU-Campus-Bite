@@ -41,8 +41,7 @@ async function fetchFoodByCanteen(canteenId) {
     if (data.success) {
       // filter items where canteenId._id matches given canteenId
       allItems = data.menuItems.filter(
-        item => item.canteenId && String(item.canteenId._id) === String(canteenId)
-      );
+item => item.canteenId && String(item.canteenId) === String(canteenId)      );
 
       console.log("Filtered items:", allItems); // debug log
 
@@ -82,7 +81,7 @@ function generateFoodCards(containerId, items, page = 1) {
     card.innerHTML = `
       <img src="${item.image || item.img || '../images/placeholder.png'}" alt="${item.name}">
       <h3 class="food-name">${item.name}</h3>
-      <p class="canteen-name">${item.canteenId?.name || ITEM.canteen}</p>
+      <p class="canteen-name">${item.canteenName || ITEM.canteen}</p>
       <div class="price-row">
         <span class="price">Rs. ${item.price}</span>
         <button class="add-btn">Add</button>

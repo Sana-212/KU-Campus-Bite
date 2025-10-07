@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canteens - Admin Dashboard</title>
+  <link rel="stylesheet" href="../dashboard/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="Gemini_Generated_Image_gqcssegqcssegqcs.png" alt="KUCampusBite Logo">
+    </div>
+    <h2 class="brand-name">KUCampusBite</h2>
+    <ul>
+      <li><a href="../dashboard/dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+      <li class="active"><a href="../canteen/canteen.html"><i class="fa-solid fa-store"></i> Canteens</a></li>
+      <li><a href="../order/order.html"><i class="fa-solid fa-box"></i> Orders</a></li>
+      <li><a href="../report/report.html"><i class="fa-solid fa-file-alt"></i> Reports</a></li>
+    </ul>
+    <div class="logout">
+      <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <!-- Navbar -->
+    <div id="navbar" class="navbar">
+      <h1>Canteens</h1>
+      <div class="nav-actions">
+        <button class="manage-btn" onclick="openManage()">
+          <i class="fa-solid fa-cog"></i> Manage All Canteens
+        </button>
+      </div>
+    </div>
+
+    Dashboard Canteen Cards
+    <div id="canteenCards" class="canteen-cards">
+      <!-- cards injected by JS -->
+
+</div>
+    
+
+    <!-- Manage Section -->
+    <div id="manageSection" class="manage-section">
+      <button id="backBtn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+      <h2>Manage Canteens</h2>
+     
+     <button class="add-btn" onclick="addCanteenPrompt()">+ Add Canteen</button>
+
+      <div class="manage-container" id="manageContainer">
+        <!-- Dynamic canteens injected here -->
+      </div>
+    </div>
+  </div><!-- Edit Canteen Modal -->
+
+  <div id="editCanteenModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeEditModal()">&times;</span>
+    <form id="editCanteenForm">
+      <input type="hidden" id="canteenId">
+      <label>Name:</label>
+      <input type="text" id="canteenName" required>
+      <label>Location:</label>
+      <input type="text" id="canteenLocation" required>
+      <label>Contact Number:</label>
+      <input type="text" id="canteenContact" required>
+
+      <h4>Menu Items</h4>
+      <div id="menuItemsContainer"></div>
+     
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+<div id="editMenuModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeEditMenu()">&times;</span>
+    <h3>Edit Menu Items</h3>
+    <div id="menuPaginationContainer"></div>
+  </div>
+</div>
+
+
+
+  <script src="canteen.js"></script>
+</body>
+</html>

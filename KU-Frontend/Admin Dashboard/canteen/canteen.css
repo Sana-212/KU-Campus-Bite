@@ -1,0 +1,468 @@
+/* General & Typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #690316;
+  --secondary-color: #911120;
+  --light-bg: #f6f6f9;
+  --dark-text: #333;
+  --light-text: #ffffff;
+  --muted-text: #707285;
+  --card-bg: #ffffff;
+  --border-color: #dcd3d6;
+  --accent-green: #2ecc71;
+  --accent-blue: #3498db;
+  --accent-purple: #9b59b6;
+  --accent-red: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  min-height: 100vh;
+}
+
+/* Sidebar Styling (Same as Dashboard & Orders) */
+.sidebar {
+  width: 250px;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.brand-name {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  flex-grow: 1;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: var(--light-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar ul li a i {
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+  background-color: var(--secondary-color);
+}
+
+.logout {
+  margin-top: auto;
+}
+
+.logout a {
+  color: var(--light-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.logout a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Main Content Styling */
+.main {
+  flex-grow: 1;
+  margin-left: 250px;
+  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--card-bg);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+/* Back Button */
+#backBtn {
+  background: none;
+  border: none;
+  color: var(--muted-text);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+#backBtn:hover {
+  color: var(--primary-color);
+}
+
+#backBtn i {
+  margin-right: 8px;
+}
+
+.nav-actions .manage-btn,
+.add-btn {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-actions .manage-btn i,
+.add-btn i {
+  margin-right: 8px;
+}
+
+.nav-actions .manage-btn:hover,
+.add-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Dashboard Canteen Cards (Initial View) */
+.canteen-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.canteen-card {
+  background-color: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.canteen-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.canteen-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.canteen-card p {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* Manage Section (Initially Hidden) */
+.manage-section {
+  display: none;
+}
+
+.manage-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--dark-text);
+}
+
+.manage-container {
+  display: grid;
+  gap: 20px;
+}
+
+.canteen-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+
+.canteen-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.canteen-item strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: block;
+}
+.canteen-item-button{
+ background-color: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* ========================
+   Canteen Item Button (Edit)
+   ======================== */
+.canteen-item-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  margin-right: 10px;
+}
+
+.canteen-item-button:hover {
+  background-color: #45a049;
+}
+
+/* ========================
+   Delete Button
+   ======================== */
+.btn.delete {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.btn.delete:hover {
+  background-color: #da190b;
+}
+
+
+.menu-list {
+  border-left: 3px solid var(--border-color);
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item span {
+  font-size: 0.9rem;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-actions button.status {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-actions button.status.available {
+  background-color: var(--accent-green);
+  color: var(--light-text);
+}
+
+.menu-actions button.status.not-available {
+  background-color: var(--accent-red);
+  color: var(--light-text);
+}
+
+/* Updated Edit & Delete Buttons (Menu Item Level) */
+.menu-actions button.edit,
+.menu-actions button.delete {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-actions button.edit i,
+.menu-actions button.delete i {
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.menu-actions button.edit {
+  color: var(--primary-color); /* Changed to primary color */
+  border-color: var(--primary-color);
+}
+
+.menu-actions button.delete {
+  color: var(--secondary-color); /* Changed to secondary color */
+  border-color: var(--secondary-color);
+}
+
+.menu-actions button.edit:hover {
+  background-color: var(--primary-color); /* Changed to primary color */
+  color: var(--light-text);
+}
+
+.menu-actions button.delete:hover {
+  background-color: var(--secondary-color); /* Changed to secondary color */
+  color: var(--light-text);
+}
+
+/* Canteen Item Level Edit & Delete Buttons */
+.canteen-item .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.canteen-item .actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.canteen-item .actions .edit {
+  background-color: var(--primary-color); /* Changed to primary color */
+  color: var(--light-text);
+}
+
+.canteen-item .actions .delete {
+  background-color: var(--secondary-color); /* Changed to secondary color */
+  color: var(--light-text);
+}
+
+.canteen-item .actions button:hover {
+  opacity: 0.8;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 80px;
+    padding: 15px;
+  }
+  .sidebar .brand-name, .sidebar ul li a span, .logout span {
+    display: none;
+  }
+  .sidebar .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  .main {
+    margin-left: 80px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .nav-actions {
+    width: 100%;
+  }
+  .nav-actions .manage-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  #searchInput {
+    width: 100%;
+  }
+  #searchBtn {
+    margin-top: 10px;
+  }
+}

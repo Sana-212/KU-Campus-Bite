@@ -1,0 +1,326 @@
+/* General & Typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #690316;
+    --secondary-color: #911120;
+    --light-bg: #f6f6f9;
+    --dark-text: #333;
+    --light-text: #ffffff;
+    --muted-text: #707285;
+    --card-bg: #ffffff;
+    --border-color: #dcd3d6;
+    --accent-green: #2ecc71;
+    --accent-blue: #3498db;
+    --accent-purple: #9b59b6;
+    --accent-red: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    min-height: 100vh;
+}
+
+/* Sidebar Styling (Same as Dashboard & Orders) */
+.sidebar {
+    width: 250px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand-name {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.sidebar ul {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+    background-color: var(--secondary-color);
+}
+
+.logout {
+    margin-top: auto;
+}
+
+.logout a {
+    color: var(--light-text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.logout a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Main Content Styling */
+.main {
+    flex-grow: 1;
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--card-bg);
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+/* Back Button (Matches previous designs) */
+#backBtn {
+    background: none;
+    border: none;
+    color: var(--muted-text);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+#backBtn:hover {
+    color: var(--primary-color);
+}
+
+#backBtn i {
+    margin-right: 8px;
+}
+
+/* Filter Button */
+.filter-btn {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn i {
+    margin-right: 8px;
+}
+
+.filter-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Report Summary Cards */
+.report-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-card h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--muted-text);
+    margin-bottom: 5px;
+}
+
+.summary-card p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Sales Table */
+.report-table {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.report-table h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--dcafac);
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+th {
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:hover {
+    background-color: #f2f2f5;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Sales Charts */
+.charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.chart-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 500px; 
+    width: 400px;
+}
+
+.chart-card h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 15px;
+}
+
+.chart-container {
+    position: relative;
+    height: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 80px;
+        padding: 15px;
+    }
+    .sidebar .brand-name, .sidebar ul li a span, .logout span {
+        display: none;
+    }
+    .sidebar .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .main {
+        margin-left: 80px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .nav-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+    .report-summary {
+        grid-template-columns: 1fr;
+    }
+    .charts {
+        grid-template-columns: 1fr;
+    }
+}

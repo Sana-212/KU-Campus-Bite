@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="Gemini_Generated_Image_gqcssegqcssegqcs.png" alt="KUCampusBite Logo">
+    </div>
+    <h2 class="brand-name">KUCampusBite</h2>
+    <ul>
+      <li class="active"><a href="../dashboard/dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+      <li><a href="../canteen/canteen.html"><i class="fa-solid fa-store"></i> Canteens</a></li>
+      <li><a href="../order/order.html"><i class="fa-solid fa-box"></i> Orders</a></li>
+      <li><a href="../report/report.html"><i class="fa-solid fa-file-alt"></i> Reports</a></li>
+    </ul>
+    <div class="logout">
+      <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <!-- Navbar -->
+    <button id="backBtn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+    <div class="navbar">
+      <h1>Welcome back 👋</h1>
+      <div class="profile">
+        <span id="adminName"></span>
+        <small>Admin</small>
+      </div>
+    </div>
+
+    <!-- Statistic Cards -->
+    <div class="cards">
+      <div class="card green">
+        <h3>Today's Revenue</h3>
+        <p id="todaysRevenue">Loading...</p>
+      </div>
+      <div class="card blue">
+        <h3>Today's Orders</h3>
+        <p id="todaysOrders">Loading...</p>
+      </div>
+      <div class="card purple">
+        <h3>Monthly Revenue</h3>
+        <p id="monthlyRevenue">Loading...</p>
+      </div>
+      <div class="card red">
+        <h3>Monthly Orders</h3>
+        <p id="monthlyOrders">Loading...</p>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <div class="chart">
+        <h3>Sales Division by Category</h3>
+        <canvas id="donutChart"></canvas>
+      </div>
+      <div class="chart">
+        <h3>Orders Per Day</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

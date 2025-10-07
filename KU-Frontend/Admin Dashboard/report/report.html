@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Report - Admin Dashboard</title>
+  <link rel="stylesheet" href="../dashboard/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="Gemini_Generated_Image_gqcssegqcssegqcs.png" alt="KUCampusBite Logo">
+    </div>
+    <h2 class="brand-name">KUCampusBite</h2>
+    <ul>
+      <li><a href="../dashboard/dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+      <li class="active"><a href="../canteen/canteen.html"><i class="fa-solid fa-store"></i> Canteens</a></li>
+      <li><a href="../order/order.html"><i class="fa-solid fa-box"></i> Orders</a></li>
+      <li><a href="../report/report.html"><i class="fa-solid fa-file-alt"></i> Reports</a></li>
+    </ul>
+    <div class="logout">
+      <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Log out</a>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <!-- Back Button -->
+    <button id="backBtn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> Back</button>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>Sales Report</h1>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="report-summary" id="summaryCards">
+      <!-- Dynamic summary cards -->
+    </div>
+
+    <!-- Sales Table -->
+    <div class="report-table">
+      <h2>Canteen Sales Overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Canteen</th>
+            <th>Orders</th>
+            <th>Revenue (Rs)</th>
+          </tr>
+        </thead>
+        <tbody id="salesTableBody">
+          <!-- Dynamic table rows -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sales Charts -->
+    <div class="report-charts">
+      <div class="chart-card">
+        <h2>Orders by Canteen</h2>
+        <div class="chart-container">
+          <canvas id="ordersChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h2>Revenue by Canteen</h2>
+        <div class="chart-container">
+          <canvas id="revenueChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="report.js"></script>
+</body>
+</html>
