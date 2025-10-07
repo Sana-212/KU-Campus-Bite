@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KuCampusBite</title>
-    <link rel="stylesheet" href="KUCampusBite.css">
+    <link rel="stylesheet" href="../KUCampusBite.css">
 </head>
 
 <body>
@@ -18,21 +18,21 @@
             </div>
             <nav class="black-text">
                 <div class="dropdown">
-            <a href="menu.html">Menu </a>
+            <a href="../AllMenuPage/menu.html">Menu </a>
             </div>
 
                 <a href="#">About Us</a>
                 <div class="dropdown">
                     <a href="#">Pages <i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="login.html">Logout</a>
-                        <a href="signup.html">Sign Up</a>
+                        <a href="../Authentication/login.html">Logout</a>
+                        <a href="../Authentication/signup.html">Sign Up</a>
                         <a href="blog.html">Blog</a>
                     </div>
                 </div>
 
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-                <a href="login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
+                <a href="../Cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                <a href="../Authentication/login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
             </nav>
         </header>
     </div>
@@ -42,12 +42,12 @@
             <h1>Discover All Canteens</h1>
             <div class="allCanteens-grid" id="canteen-grid"></div>
         </div>
-        <div class="pagination-container">
+        <!-- <div class="pagination-container">
             <button id="prev-btn" class="pagination-btn">&lt;</button>
             <div id="page-numbers" class="page-numbers">
             </div>
             <button id="next-btn" class="pagination-btn">&gt;</button>
-        </div>
+        </div> -->
     </section>
 
     <footer>
@@ -73,7 +73,7 @@
         </div>
     </footer>
 
-    <script src="allCanteens.js"></script>
+    <script src="../HomePage/canteen.js"></script>
     <script src="https://kit.fontawesome.com/2eea43c493.js" crossorigin="anonymous"></script>
 
 </body>

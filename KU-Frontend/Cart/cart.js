@@ -1,0 +1,171 @@
+function getIdentifier() {
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (user && user._id) {
+    console.log("Logged-in user ID:", user._id);
+    return { type: "user", id: user._id };
+  }
+
+  let guestId = localStorage.getItem("guestId");
+  if (!guestId) {
+    guestId = crypto.randomUUID();
+    console.log("Logged-in user ID:", guestId);
+    localStorage.setItem("guestId", guestId);
+  }
+  return { type: "guest", id: guestId };
+}
+
+function getAuthHeaders() {
+  const token = localStorage.getItem("token");
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
+async function fetchCart() {
+  try {
+    const { type, id } = getIdentifier();
+    const headers = { ...getAuthHeaders() };
+
+    const response = await fetch(
+      `http://localhost:5000/api/cart?${type}Id=${id}`,
+      { headers }
+    );
+
+    const data = await response.json();
+
+    if (data.success) {
+      displayCart(data.cart);
+    } else {
+      console.log("No items in cart.");
+      displayCart([]);
+    }
+  } catch (error) {
+    console.error("Error fetching cart:", error);
+  }
+}
+
+async function updateCartItem(itemId, action) {
+  try {
+    const { type, id } = getIdentifier();
+    const headers = {
+      "Content-Type": "application/json",
+      ...getAuthHeaders(),
+    };
+
+    const response = await fetch(`http://localhost:5000/api/cart/update`, {
+      method: "PATCH",
+      headers,
+      body: JSON.stringify({ [`${type}Id`]: id, itemId, action }),
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      fetchCart();
+    } else {
+      console.log("Failed to update cart:", data.msg);
+    }
+  } catch (error) {
+    console.error("Error updating cart:", error);
+  }
+}
+
+export async function clearCart() {
+  try {
+    const { type, id } = getIdentifier();
+    const headers = { ...getAuthHeaders() };
+
+    const response = await fetch(
+      `http://localhost:5000/api/cart/clear?${type}Id=${id}`,
+      {
+        method: "DELETE",
+        headers,
+      }
+    );
+
+    const data = await response.json();
+    if (data.success) {
+      fetchCart();
+    } else {
+      console.log("Failed to clear cart:", data.msg);
+    }
+  } catch (error) {
+    console.error("Error clearing cart:", error);
+  }
+}
+
+function displayCart(cartItems = []) {
+  const tbody = document.getElementById("cart-table-body");
+  const subtotalEl = document.getElementById("subtotal");
+  const grandTotalEl = document.getElementById("grand-total");
+
+  if (!tbody) return;
+
+  tbody.innerHTML = "";
+  let subtotal = 0;
+
+  cartItems.forEach((item) => {
+    const itemTotal = item.price * item.quantity;
+    subtotal += itemTotal;
+
+    const row = document.createElement("tr");
+    row.innerHTML = `
+     <img src="${item.img || 'placeholder.jpg'}" 
+  
+      <td>${item.name}</td>
+        <td>${item.price}</td>
+        <td>
+          <button class="decrease-btn" data-id="${item._id}">-</button>
+          <span>${item.quantity}</span>
+          <button class="increase-btn" data-id="${item._id}">+</button>
+        </td>
+        <td>${itemTotal}</td>
+        <td>
+          <button class="remove-btn" data-id="${item._id}">❌</button>
+        </td>
+      `;
+    tbody.appendChild(row);
+  });
+
+  subtotalEl.textContent = subtotal.toFixed(2);
+  grandTotalEl.textContent = subtotal.toFixed(2);
+}
+
+function isLoggedIn() {
+  const token = localStorage.getItem("token");
+  const user = JSON.parse(localStorage.getItem("user"));
+  return !!(token && user && user._id);
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetchCart();
+
+  document.body.addEventListener("click", (e) => {
+    if (e.target.classList.contains("increase-btn")) {
+      updateCartItem(e.target.dataset.id, "increase");
+    }
+    if (e.target.classList.contains("decrease-btn")) {
+      updateCartItem(e.target.dataset.id, "decrease");
+    }
+    if (e.target.classList.contains("remove-btn")) {
+      updateCartItem(e.target.dataset.id, "remove");
+    }
+  });
+
+  const shopBtn = document.getElementById("shop-btn");
+  if (shopBtn)
+    shopBtn.addEventListener("click", () => (window.location.href = "../AllMenuPage/menu.html"));
+
+  const clearBtn = document.getElementById("clear-btn");
+  if (clearBtn) clearBtn.addEventListener("click", clearCart);
+
+  const checkoutBtn = document.getElementById("checkout-btn");
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", () => {
+      if (isLoggedIn()) {
+        window.location.href = "../Checkout/checkout.html";
+      } else {
+        alert("Please log in first to proceed to checkout.");
+        window.location.href = "../Authentication/login.html";
+      }
+    });
+  }
+});

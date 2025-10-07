@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KU Campus Bite</title>
-  <link rel="stylesheet" href="KUCampusBite.css">
+  <link rel="stylesheet" href="../KUCampusBite.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
@@ -22,7 +22,7 @@
 <body>
   <div class="bg-container">
     <div class="img-container">
-      <img src="./images/img1.jpg" alt="Logo" class="bg-img">
+      <img src="../images/img1.jpg" alt="Logo" class="bg-img">
     </div>
     <div class="header-overlay">
       <header>
@@ -36,21 +36,21 @@
 
         <nav>
           <div class="dropdown">
-            <a href="menu.html">Menu </a>
+            <a href="../AllMenuPage/menu.html">Menu </a>
           </div>
 
           <a href="#">About Us</a>
           <div class="dropdown">
             <a href="#">Pages ▼</a>
             <div class="dropdown-content">
-              <a href="login.html">Login</a>
-              <a href="signup.html">Sign Up</a>
+              <a href="../Authentication/login.html">Login</a>
+              <a href="../Authentication/signup.html">Sign Up</a>
               <a href="blog.html">Blog</a>
             </div>
           </div>
 
-                  <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-          <a href="login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
+                  <a href="../Cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+          <a href="../Authentication/login.html"><i class="fa-solid fa-circle-user"></i> Logout</a>
         </nav>
       </header>
     </div>
@@ -59,7 +59,7 @@
       <h1>Good vibes start with good bites</h1>
       <p>From campus hunger to canteen wonder—order what you crave, right here at KU!</p>
       <div class="search-container">
-        <input type="search" class="search-input" placeholder="Search for canteen or food items">
+        <input type="search" class="search-input" placeholder="Search for food items">
         <button class="search-btn"><i class="fa fa-search"></i></button>
       </div>
     </div>
@@ -76,11 +76,11 @@
         <i class="fa fa-chevron-right"></i>
       </button>
     </div>
-    <a href="canteen.html" class="See-All-Canteen">See all Canteens -></a>
+    <a href="../AllCanteenPage/allCanteens.html" class="See-All-Canteen">See all Canteens -></a>
   </section>
 
   <section class="food-section">
-    <h1>Popular Dishes</h1>
+    <h1 id="food-section-heading">Popular Dishes</h1>
     <div class="food-grid" id="food-grid"></div>
   </section>
 
@@ -110,6 +110,7 @@
   </footer>
 
   <script type="module" src="canteen.js"></script>
+  <script type="module" src="search.js"></script>
   <script type="module" src="newhome.js"></script>
 
 </body>

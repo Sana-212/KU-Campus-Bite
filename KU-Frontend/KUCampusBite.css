@@ -530,13 +530,13 @@ section {
   text-align: left;
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
+  cursor: pointer;
 }
 .food-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-   border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
@@ -570,6 +570,9 @@ section {
   transform: translateY(-5px);
 }
 .food-card h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 10px 10px 0;
   font-size: 1.1rem;
   /* color: #333; */
@@ -868,7 +871,7 @@ hr {
   width: 100%;
   height: 75px;
   background: white;
-   box-shadow: 1px 7px 12px rgb(110 0 0 / 8%); 
+  box-shadow: 1px 7px 12px rgb(110 0 0 / 8%);
   z-index: 2;
   display: flex;
   align-items: center;
@@ -927,7 +930,7 @@ hr {
   gap: 28px;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-bottom: 40px;
   margin: 0 auto;
   padding-top: 40px;
@@ -938,7 +941,7 @@ hr {
   border-radius: 14px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 235px;
+  width: 235px; /* Default width for desktop */
   transition: transform 0.3s;
 }
 
@@ -1028,68 +1031,64 @@ hr {
   background-color: var(--main-primary-color);
   border: none;
   border-radius: 25px;
-  padding: 8px 13px;
+  width: 2vw;
+  padding: 8px 3px;
   cursor: pointer;
   font-weight: bold;
 }
 .page-number:hover {
   background-color: var(--second-primary-color);
 }
-/* 
-.page-number.active {
-    background-color:var(--main-primary-color);
-    color: white;
-    border-color: none
-} */
 
-/* ===== MOBILE RESPONSIVE DESIGN ===== */
-@media (max-width: 1024px) {
+/* ===== NEW MEDIA QUERY FOR 3 COLUMNS ===== */
+@media (max-width: 1160px) {
   .menu-item {
-    width: 45%; /* 2 items per row on tablets */
+    width: 30%; /* 3 columns on smaller desktops */
   }
 }
 
-@media (max-width: 768px) {
+/* ===== MEDIA QUERY FOR 2 COLUMNS (TABLETS) ===== */
+@media (max-width: 900px) {
   .menu-item {
-    width: 100%; /* full width on small tablets & phones */
-  }
-
-  .menu-item img {
-    height: 180px;
-  }
-
-  .menu-item-info h3 {
-    font-size: 1em;
-  }
-
-  .menu-item-price .price {
-    font-size: 1.2em;
-  }
-
-  .add-btn {
-    padding: 6px 12px;
-    font-size: 0.9em;
+    width: 45%; /* 2 columns on tablets */
   }
 }
 
-@media (max-width: 480px) {
-  body {
+/* ===== MOBILE RESPONSIVE DESIGN (PHONES) ===== */
+@media (max-width: 520px) {
+  .menu-container {
     padding: 10px;
+    gap: 25px;
   }
-
+  .menu-item {
+    width: 75%; /* Single column on phones */
+    margin: 0 auto;
+  }
   .menu-item img {
-    height: 150px;
+    height: 140px;
   }
-
+  .menu-item-info {
+    padding: 8px 12px;
+  }
+  .menu-section h1 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+  .add-btn {
+    height: 30px;
+    padding: 6px 12px;
+  }
   .pagination-container {
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    margin-bottom: 40px;
   }
-
   .pagination-btn,
   .page-number {
-    width: 100%;
-    text-align: center;
+    width: 90%;
+  }
+  .page-numbers {
+    gap: 6px;
   }
 }
 
@@ -1651,9 +1650,9 @@ h1#foodName {
   justify-content: space-between;
   border: 1px solid var(--second-primary-color);
   border-radius: 50px;
-  padding: 3px 12px;
+  padding: 3px 10px;
   width: 120px;
-  height: 40px;
+  height: 35px;
   overflow: hidden;
 }
 
@@ -1953,7 +1952,7 @@ label {
   color: #000;
 }
 
-input[type="text"],
+.field input[type="text"],
 textarea,
 select {
   border: 1px solid #262830;
