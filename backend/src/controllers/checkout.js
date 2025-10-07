@@ -26,7 +26,7 @@ const checkout = async (req, res) => {
 
     const order = new Order({
       userId,
-      userName,
+      // userName,
       items: cart.items,
       totalAmount,
       status: "pending",

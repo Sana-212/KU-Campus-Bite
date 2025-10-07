@@ -3,7 +3,8 @@ const Menu = require("../models/foodMenu");
 
 const getAllCanteens = async (req, res) => {
   try {
-    const canteens = await Canteen.find({});
+    const canteens = await Canteen.find({})
+
     return res.status(200).json({ success: true, canteens });
   } catch (error) {
     return res.status(500).json({ success: false, msg: error.message });

@@ -110,10 +110,16 @@ const login = async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: "24h" }
     );
+     const userWithoutPassword = {
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+    };
 
     return res
       .status(200)
-      .json({ message: "Login successful", role: user.role, token });
+      .json({ message: "Login successful", role: user.role, token ,user:userWithoutPassword});
   } catch (err) {
     return res
       .status(500)

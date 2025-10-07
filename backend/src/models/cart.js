@@ -2,10 +2,11 @@ const mongoose = require("mongoose");
 
 const cartItemSchema = new mongoose.Schema({
   menuItemId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Menu Items",
-    required: true,
-  },
+  type: mongoose.Schema.Types.ObjectId,
+  ref: "Menu Items",   
+  required: true,
+},
+
   quantity: {
     type: Number,
     required: true,
