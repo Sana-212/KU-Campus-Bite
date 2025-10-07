@@ -42,7 +42,7 @@ function initItemDetails() {
 console.log(storedItem)
     currentItem = {
         ...storedItem,
-        canteen: storedItem.canteenId?.name || "Unknown Canteen"
+        canteen: storedItem.canteenName|| "Unknown Canteen"
     };
 
     $("foodImage") && ($("foodImage").src = currentItem.image || '../images/placeholder.png');

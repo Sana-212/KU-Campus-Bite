@@ -187,6 +187,7 @@ document.getElementById("userForm").addEventListener("submit", async function (e
 
         const orderData = {
             userId: user._id,
+            userName:name,
             items,
             totalAmount,
             deliveryAddress: dept,

@@ -7,7 +7,7 @@ const Cart = require("../models/cart");
 const checkout = async (req, res) => {
   try {
     const userId = req.user.id; // comes from JWT payload
-    const {deliveryAddress }= req.body;
+    const {deliveryAddress,userName }= req.body;
 
      if (!deliveryAddress) {
             return res.status(400).json({ success: false, msg: "Delivery address is required." });
@@ -26,7 +26,7 @@ const checkout = async (req, res) => {
 
     const order = new Order({
       userId,
-      // userName,
+      userName,
       items: cart.items,
       totalAmount,
       status: "pending",

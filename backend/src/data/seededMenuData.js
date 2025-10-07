@@ -304,14 +304,6 @@ module.exports = [
     "category": "lunch"
   },
   {
-    "name": "Chicken Burger",
-    "price": 300,
-    "canteenName": "Neelum Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "lunch"
-  },
-  {
     "name": "Chana Chaat",
     "price": 100,
     "canteenName": "Baba Food Canteen",
@@ -341,174 +333,6 @@ module.exports = [
     "canteenName": "Neelum Canteen",
     "available": false,
     "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Tea",
-    "price": 60,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Kahva",
-    "price": 60,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Green Tea",
-    "price": 60,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Masala Tea",
-    "price": 80,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Coffee",
-    "price": 100,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/coffee.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Pina Colada Mocktail",
-    "price": 150,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Angel Mist Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/angel_mist_mocktail.jpg",
-    "category": "drinks"
-  },
-  {
-    "name": "Zombie Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/zombie_mocktail.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Cooling Punch Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/cooling_punch_mocktail.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Caramel Crunch Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/caramel_crunch_mocktail.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Strawberry Magic Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "White Colada Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/white_colada_mocktail.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Blue Colada Mocktail",
-    "price": 250,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/blue_colada_mocktail.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Gola Ganda Small",
-    "price": 80,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Gola Ganda Large",
-    "price": 150,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Banana Shake",
-    "price": 120,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/banana_shake.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Dates Shake",
-    "price": 120,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Mango Shake",
-    "price": 150,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Banana+Dates Shake",
-    "price": 150,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Oreo Shake",
-    "price": 150,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Chocolate Shake",
-    "price": 150,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/chocolate_shake.jfif",
     "category": "drinks"
   },
   {
@@ -609,14 +433,6 @@ module.exports = [
   },
   {
     "name": "Guava Mojito",
-    "price": 120,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/default_food.jfif",
-    "category": "drinks"
-  },
-  {
-    "name": "Kulki Soda Limca",
     "price": 120,
     "canteenName": "Baba Food Canteen",
     "available": true,
@@ -853,14 +669,6 @@ module.exports = [
     "canteenName": "Baba Food Canteen",
     "available": true,
     "image": "/images/menu_items/default_food.jfif",
-    "category": "dessert"
-  },
-  {
-    "name": "Chocolate Spread Crushed Waffer Bar Waffle (Half)",
-    "price": 240,
-    "canteenName": "Baba Food Canteen",
-    "available": true,
-    "image": "/images/menu_items/chocolate_spread_crushed_waffer_bar_waffle_(half).jfif",
     "category": "dessert"
   },
   {
@@ -2088,14 +1896,6 @@ module.exports = [
     "category": "snacks"
   },
   {
-    "name": "Chicken Nuggets",
-    "price": 30,
-    "canteenName": "Neelum Canteen",
-    "available": false,
-    "image": "/images/menu_items/chicken_nuggets.jfif",
-    "category": "snacks"
-  },
-  {
     "name": "Chicken Burger",
     "price": 300,
     "canteenName": "Neelum Canteen",
@@ -2496,14 +2296,6 @@ module.exports = [
     "category": "drinks"
   },
   {
-    "name": "Banana with Oreo Shake",
-    "price": 150,
-    "canteenName": "Neelum Canteen",
-    "available": true,
-    "image": "/images/menu_items/banana_with_oreo_shake.jfif",
-    "category": "drinks"
-  },
-  {
     "name": "Papaya Shake",
     "price": 150,
     "canteenName": "Neelum Canteen",
@@ -2687,7 +2479,343 @@ module.exports = [
     "image": "/images/menu_items/default_food.jfif",
     "category": "lunch"
   },
+   {
+    "name": "Beef Burger with Fries",
+    "price": 200,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/beef_burger_with_fries.jpeg",
+    "category": "lunch"
+  },
   {
+    "name": "Beef Cheese Burger with Fries",
+    "price": 260,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/beef_cheese_burger_with_fries.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Anda Kabab Burger",
+    "price": 150,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/anda_kabab_burger.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Anda Kabab Cheese Burger",
+    "price": 210,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/anda_kabab_cheese_burger.jpg",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Burger",
+    "price": 100,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Cheese Burger",
+    "price": 160,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Zinger Burger with Fries",
+    "price": 300,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Zinger Cheese Burger with Fries",
+    "price": 360,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Tikka Burger with Fries",
+    "price": 250,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Tikka Cheese Burger with Fries",
+    "price": 310,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Sandwich with Fries",
+    "price": 200,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Cheese Sandwich with Fries",
+    "price": 260,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/chicken_cheese_sandwich_with_fries.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Beef Sandwich with Fries",
+    "price": 200,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Beef Cheese Sandwich with Fries",
+    "price": 260,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/beef_cheese_sandwich_with_fries.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Kabab Sandwich",
+    "price": 120,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Kabab Cheese Sandwich",
+    "price": 180,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Anda Kabab Sandwich",
+    "price": 170,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/anda_kabab_sandwich.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Anda Kabab Cheese Sandwich",
+    "price": 230,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/anda_kabab_cheese_sandwich.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Only Anda Sandwich",
+    "price": 120,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Only Anda Cheese Sandwich",
+    "price": 180,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Club Sandwich with Fries",
+    "price": 300,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Club Sandwich Cheese with Fries",
+    "price": 360,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Tikka Sandwich with Fries",
+    "price": 250,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Tikka Sandwich Cheese with Fries",
+    "price": 310,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Zinger Club Sandwich with Fries",
+    "price": 350,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Zinger Cheese Club Sandwich with Fries",
+    "price": 410,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Beef Club Sandwich with Fries",
+    "price": 300,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Beef Club Cheese Sandwich with Fries",
+    "price": 360,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/beef_club_cheese_sandwich_with_fries.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Chatni Roll",
+    "price": 120,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Chatni Cheese Roll",
+    "price": 180,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Zinger Roll",
+    "price": 200,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Zinger Cheese Roll",
+    "price": 260,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Mayo Roll",
+    "price": 150,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Mayo Cheese Roll",
+    "price": 210,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Malai Roll",
+    "price": 150,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Malai Cheese Roll",
+    "price": 210,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Kabab Roll",
+    "price": 120,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Kabab Cheese Roll",
+    "price": 180,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Kabab Roll",
+    "price": 150,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/chicken_kabab_roll.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Kabab Cheese Roll",
+    "price": 210,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Sada Kabab",
+    "price": 70,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/default_food.jfif",
+    "category": "lunch"
+  },
+  {
+    "name": "Chicken Kabab",
+    "price": 100,
+    "canteenName": "Neelum Canteen",
+    "available": true,
+    "image": "/images/menu_items/chicken_kabab.jfif",
+    "category": "lunch"
+  },
+   {
     "name": "Beef Burger with Fries",
     "price": 200,
     "canteenName": "Neelum Canteen",
@@ -5399,7 +5527,7 @@ module.exports = [
     "image": "/images/menu_items/blueberry_shake.jfif",
     "category": "drinks"
   },
-  {
+ {
     "name": "Carrymal Shake",
     "price": 150,
     "canteenName": "MS Canteen",
