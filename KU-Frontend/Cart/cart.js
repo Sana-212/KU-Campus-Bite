@@ -91,6 +91,8 @@ export async function clearCart() {
   }
 }
 
+const BACKEND_BASE_URL = "http://localhost:5000"; 
+
 function displayCart(cartItems = []) {
   const tbody = document.getElementById("cart-table-body");
   const subtotalEl = document.getElementById("subtotal");
@@ -105,22 +107,30 @@ function displayCart(cartItems = []) {
     const itemTotal = item.price * item.quantity;
     subtotal += itemTotal;
 
+        const relativeImagePath = item.menuItemId?.image || item.menuItemId?.img || '/images/placeholder.png'; 
+
+        let imageSrc = relativeImagePath;
+        if (imageSrc.startsWith('/')) {
+            imageSrc = `${BACKEND_BASE_URL}${imageSrc}`;
+        }
+
     const row = document.createElement("tr");
     row.innerHTML = `
-     <img src="${item.img || 'placeholder.jpg'}" 
-  
-      <td>${item.name}</td>
-        <td>${item.price}</td>
-        <td>
-          <button class="decrease-btn" data-id="${item._id}">-</button>
-          <span>${item.quantity}</span>
-          <button class="increase-btn" data-id="${item._id}">+</button>
-        </td>
-        <td>${itemTotal}</td>
-        <td>
-          <button class="remove-btn" data-id="${item._id}">❌</button>
-        </td>
-      `;
+            <td class="item-details-cell"> 
+                <img src="${imageSrc}" alt="${item.name}" class="food-image">
+                ${item.name}
+            </td>
+            <td>Rs. ${item.price}</td>
+            <td>
+                <button class="decrease-btn" data-id="${item._id}">-</button>
+                <span>${item.quantity}</span>
+                <button class="increase-btn" data-id="${item._id}">+</button>
+            </td>
+            <td>Rs. ${itemTotal.toFixed(2)}</td>
+            <td>
+                <button class="remove-btn" data-id="${item._id}">❌</button>
+            </td>
+        `;
     tbody.appendChild(row);
   });
 

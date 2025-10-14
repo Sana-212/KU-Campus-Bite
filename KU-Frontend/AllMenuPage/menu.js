@@ -1,5 +1,6 @@
 import { addToCart } from "../Cart/addToCart.js";
 
+  const BACKEND_BASE_URL = "http://localhost:5000";
 
 let allItems = [];
 let currentPage = 1;
@@ -23,7 +24,16 @@ function generateFoodCards(containerId, items, limit = 1005) {
       item.canteenSlug ||
       "Unknown Canteen";
 
-    const image = item.image || "../images/placeholder.png";
+    // const image = item.image || "../images/placeholder.png";
+
+    // 1. Get the relative path (e.g., /images/menu_items/chai.jfif)
+    const relativeImagePath = item.image || "/images/placeholder.png";
+
+    // 2. Construct the absolute URL
+    const absoluteImageUrl = relativeImagePath.startsWith("http")
+      ? relativeImagePath // If it's already a full URL, use it
+      : `${BACKEND_BASE_URL}${relativeImagePath}`; // Prepend the backend URL
+
     const priceText =
       item.price !== undefined && item.price !== null
         ? `Rs. ${item.price}`
@@ -32,7 +42,7 @@ function generateFoodCards(containerId, items, limit = 1005) {
     const card = document.createElement("div");
     card.className = "food-card";
     card.innerHTML = `
-      <img src="${image}" alt="${item.name}">
+  <img src="${absoluteImageUrl}" alt="${item.name}">
       <h3 class="food-name">${item.name}</h3>
       <p class="canteen-name">${canteenDisplay}</p>
       <div class="price-row">
@@ -87,27 +97,29 @@ function renderMenu() {
   generateFoodCards("menu-container", paginatedItems);
 }
 
+
 function renderPagination() {
   pageNumbersContainer.innerHTML = "";
   const totalPages = Math.ceil(allItems.length / itemsPerPage);
+  const pagesPerSet = 5;
 
-  if (totalPages <= 1) {
-    prevBtn.style.display = "none";
-    nextBtn.style.display = "none";
-    pageNumbersContainer.style.display = "none";
-    return;
+  // Calculate sliding window start page
+  // Ensure startPage is at least 1 and max so that window fits in totalPages
+  let startPage = currentPage;
+  if (startPage + pagesPerSet - 1 > totalPages) {
+    startPage = Math.max(totalPages - pagesPerSet + 1, 1);
   }
+  const endPage = Math.min(startPage + pagesPerSet - 1, totalPages);
 
-  prevBtn.style.display = "inline-block";
-  nextBtn.style.display = "inline-block";
-  pageNumbersContainer.style.display = "flex";
-
-  for (let i = 1; i <= totalPages; i++) {
+  for (let i = startPage; i <= endPage; i++) {
     const pageBtn = document.createElement("span");
     pageBtn.classList.add("page-number");
-    if (i === currentPage) pageBtn.classList.add("active");
-
     pageBtn.textContent = i;
+
+    if (i === currentPage) {
+      pageBtn.classList.add("active");
+    }
+
     pageBtn.addEventListener("click", () => {
       currentPage = i;
       renderMenu();
@@ -120,7 +132,6 @@ function renderPagination() {
   prevBtn.disabled = currentPage === 1;
   nextBtn.disabled = currentPage === totalPages;
 }
-
 prevBtn.addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
@@ -137,6 +148,26 @@ nextBtn.addEventListener("click", () => {
     renderPagination();
   }
 });
+
+
+function createPageButton(page) {
+  const pageBtn = document.createElement("span");
+  pageBtn.classList.add("page-number");
+  pageBtn.textContent = page;
+
+  if (page === currentPage) {
+    pageBtn.classList.add("active");
+  }
+
+  pageBtn.addEventListener("click", () => {
+    currentPage = page;
+    renderMenu();
+    renderPagination();
+  });
+
+  return pageBtn;
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchAllMenuItems();

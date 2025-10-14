@@ -37,7 +37,7 @@ const seedData = async () => {
       canteenId: canteenMap[menu.canteenName],
       slug: slugify(menu.name, { lower: true, strict: true }),
     }));
-
+console.log(process.env.MONGO_URI); 
     //Insert menus
     await Menu.insertMany(menuWithIds);
 

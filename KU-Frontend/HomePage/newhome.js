@@ -7,6 +7,9 @@ export function generateFoodCards(containerId, items, limit = 20) {
   container.innerHTML = "";
   const list = limit ? items.slice(0, limit) : items;
 
+    const BACKEND_BASE_URL = "http://localhost:5000"; // 👈 Define your backend URL
+
+
   list.forEach(item => {
     const canteenDisplay =
       item.canteenId?.name ||
@@ -14,7 +17,17 @@ export function generateFoodCards(containerId, items, limit = 20) {
       item.canteenSlug ||
       "Unknown Canteen";
 
-    const image = item.image || "../images/placeholder.png";
+    // const image = item.image || "../images/placeholder.png";
+
+  // 1. Get the relative path (e.g., /images/menu_items/chai.jfif)
+        const relativeImagePath = item.image || "/images/placeholder.png"; 
+
+        // 2. Construct the absolute URL
+        const absoluteImageUrl = relativeImagePath.startsWith('http') 
+            ? relativeImagePath // If it's already a full URL, use it
+            : `${BACKEND_BASE_URL}${relativeImagePath}`; // Prepend the backend URL
+
+
     const priceText =
       item.price !== undefined && item.price !== null
         ? `Rs. ${item.price}`
@@ -23,7 +36,7 @@ export function generateFoodCards(containerId, items, limit = 20) {
     const card = document.createElement("div");
     card.className = "food-card";
     card.innerHTML = `
-      <img src="${image}" alt="${item.name}">
+    <img src="${absoluteImageUrl}" alt="${item.name}">
       <h3 class="food-name">${item.name}</h3>
       <p class="canteen-name">${canteenDisplay}</p>
       <div class="price-row">

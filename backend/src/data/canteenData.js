@@ -1,109 +1,128 @@
-module.exports=[
+module.exports = [
   {
     name: "Baba Food Canteen",
     location: "KUBS Dept",
     contactNumber: "03168609629",
+    image: " ",
   },
   {
     name: "Neelum Canteen",
     location: "Neelum",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Pharmacy Canteen",
     location: "Pharmacy Dept",
     contactNumber: "0348 2429525",
+    image: " ",
   },
   {
     name: "Safeer Canteen",
     location: "Neelum",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Cafe Jamia",
     location: "VS",
     contactNumber: "03107792228",
+    image: " ",
   },
   {
     name: "Cafe Ashna Raheel",
     location: "VS",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "RC Canteen",
     location: "RC Canteen",
     contactNumber: "03432987070",
+    image: " ",
   },
   {
     name: "MS Canteen",
     location: "Chemistry Canteen",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Al-Qasmia Shahid Canteen",
     location: "Neelum",
     contactNumber: "0311 8230512",
+    image: " ",
   },
   {
     name: "Taha Canteen",
     location: "KUBS Dept",
     contactNumber: "03132661512",
+    image: " ",
   },
   {
     name: "Terminal Canteen",
     location: "Terminal",
     contactNumber: "03316235160",
+    image: " ",
   },
   {
     name: "MashAllah Canteen",
     location: "Chemistry Canteen",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "BS Food Center",
     location: "Chemistry Canteen",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Student Star Canteen",
     location: "PG Canteen",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Cafe Safeer",
     location: "Pharmacy Dept",
     contactNumber: "03102854580",
+    image: " ",
   },
   {
     name: "Nizamiyan Canteen",
     location: "PG Canteen",
     contactNumber: "03132969677",
+    image: " ",
   },
   {
     name: "Kasim Samosa",
     location: "PG Canteen",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Nazeer Chat House",
     location: "PG Canteen",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Mass Communication Canteen",
     location: "Mass Communication Dept",
     contactNumber: "",
+    image: " ",
   },
   {
     name: "Abdullah Canteen",
     location: "PG Canteen",
     contactNumber: "03107792228",
+    image: " ",
   },
   {
     name: "DMS Canteen",
     location: "DMS Canteen",
     contactNumber: "",
+    image: " ",
   },
-
-
 ];

@@ -38,22 +38,30 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
 
       if (response.ok) {
-        alert("Login successful!");
+        alert(data.message || "Login successful!");
 
+        // ✅ Handle admin login (no token or user object expected)
+        if (data.role && data.role === "admin") {
+          localStorage.setItem("role", "admin"); 
+          window.location.href = "../Admin Dashboard/dashboard/dashboard.html";
+          return;
+        }
 
-        localStorage.setItem("user", JSON.stringify(data.user));
-        localStorage.setItem("token", data.token);
-
+        // ✅ Normal user login
+        if (data.user) {
+          localStorage.setItem("user", JSON.stringify(data.user));
+        }
+        if (data.token) {
+          localStorage.setItem("token", data.token);
+        }
 
         localStorage.removeItem("guestId");
-
 
         if (rememberCheckbox.checked) {
           localStorage.setItem("rememberedEmail", email);
         } else {
           localStorage.removeItem("rememberedEmail");
         }
-
 
         window.location.href = "../HomePage/KUCampusBite.html";
       } else if (response.status === 404) {

@@ -1,144 +1,132 @@
 import { clearCart } from "../Cart/addToCart.js";
 
+const BACKEND_BASE_URL = "http://localhost:5000";
+
 async function loadCart() {
-    const cartItemsContainer = document.getElementById("cart-items");
-    let subtotal = 0;
+  const cartItemsContainer = document.getElementById("cart-items");
+  let subtotal = 0;
 
-    const user = JSON.parse(localStorage.getItem("user"));
-    const token = localStorage.getItem("token");
+  const user = JSON.parse(localStorage.getItem("user"));
+  const token = localStorage.getItem("token");
 
-    if (!user || !user._id || !token) {
-        cartItemsContainer.innerHTML = "<p style='text-align: center; color: red;'>Please log in to view your cart.</p>";
-        return;
-    }
+  if (!user || !user._id || !token) {
+    cartItemsContainer.innerHTML =
+      "<p style='text-align: center; color: red;'>Please log in to view your cart.</p>";
+    return;
+  }
 
-    try {
-        const response = await fetch(`http://localhost:5000/api/cart?userId=${user._id}`, {
-            headers: {
-                "Authorization": `Bearer ${token}`
-            }
-        });
+  try {
+    const response = await fetch(
+      `http://localhost:5000/api/cart?userId=${user._id}`,
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
 
-        if (!response.ok) throw new Error("Failed to fetch cart");
+    if (!response.ok) throw new Error("Failed to fetch cart");
 
-        const data = await response.json();
-        const cart = data.cart || [];
+    const data = await response.json();
+    const cart = data.cart || [];
+    cartItemsContainer.innerHTML = "";
 
-        cartItemsContainer.innerHTML = "";
+    if (cart.length === 0) {
+      cartItemsContainer.innerHTML =
+        "<p style='text-align: centFer; color: #777;'>Your cart is empty.</p>";
+    } else {
+      cart.forEach((item) => {
+        const itemTotal = item.price * item.quantity;
+        subtotal += itemTotal;
 
-        if (cart.length === 0) {
-            cartItemsContainer.innerHTML = "<p style='text-align: center; color: #777;'>Your cart is empty.</p>";
-        } else {
-            cart.forEach(item => {
-                const itemTotal = item.price * item.quantity;
-                subtotal += itemTotal;
+        const relativeImagePath =
+          item.menuItemId?.image || "/images/placeholder.png";
 
-                const div = document.createElement("div");
-                div.classList.add("food-item");
-                div.innerHTML = `
-                    <img src="${item.img || 'placeholder.jpg'}" alt="${item.name}" class="checkout-food-image">
+        let imageSrc = relativeImagePath;
+        if (imageSrc.startsWith("/")) {
+          imageSrc = `${BACKEND_BASE_URL}${imageSrc}`;
+        }
+
+        const div = document.createElement("div");
+        div.classList.add("food-item");
+        div.innerHTML = `
+             <img src="${imageSrc}" alt="${item.name}" class="checkout-food-image">
                     <div class="food-info">
                         <h3>${item.name}</h3>
                         <p class="food-qty">Quantity: ${item.quantity}</p>
                         <p class="food-total">Total: Rs ${itemTotal}</p>
                     </div>
                 `;
-                cartItemsContainer.appendChild(div);
-            });
-        }
-
-        const subtotalEl = document.getElementById("subtotal");
-        const deliveryEl = document.getElementById("delivery-charge");
-        const totalEl = document.getElementById("total-price");
-
-        if (subtotalEl) subtotalEl.innerText = "Rs " + subtotal;
-        if (deliveryEl) deliveryEl.innerText = "Rs " + (cart.length > 0 ? 50 : 0);
-        if (totalEl) totalEl.innerText = "Rs " + (subtotal + (cart.length > 0 ? 50 : 0));
-
-    } catch (error) {
-        console.error("Error loading cart:", error);
-        cartItemsContainer.innerHTML = "<p style='text-align: center; color: red;'> Failed to load cart.</p>";
+        cartItemsContainer.appendChild(div);
+      });
     }
+
+    const subtotalEl = document.getElementById("subtotal");
+    const deliveryEl = document.getElementById("delivery-charge");
+    const totalEl = document.getElementById("total-price");
+
+    if (subtotalEl) subtotalEl.innerText = "Rs " + subtotal;
+    if (deliveryEl) deliveryEl.innerText = "Rs " + (cart.length > 0 ? 50 : 0);
+    if (totalEl)
+      totalEl.innerText = "Rs " + (subtotal + (cart.length > 0 ? 50 : 0));
+  } catch (error) {
+    console.error("Error loading cart:", error);
+    cartItemsContainer.innerHTML =
+      "<p style='text-align: center; color: red;'>Failed to load cart.</p>";
+  }
 }
 
-// document.getElementById("userForm").addEventListener("submit", async function (e) {
-//     e.preventDefault();
+// ✅ Custom success modal
+function showOrderSuccess(name, dept) {
+  const modal = document.createElement("div");
+  modal.classList.add("modal");
+  modal.innerHTML = `
+        <div class="modal-content">
+            <div class="check-icon">✔️</div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you, <strong>${name}</strong>!<br>We’ll deliver to: <strong>${dept}</strong></p>
+            <button id="okButton">OK</button>
+        </div>
+    `;
+  document.body.appendChild(modal);
 
-//     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-//     if (cart.length === 0) {
-//         alert("Your cart is empty.");
-//         return;
-//     }
+  // Add styles dynamically
+  const style = document.createElement("style");
+  style.innerHTML = `
+        .modal {
+            display: flex; position: fixed; z-index: 9999;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); justify-content: center; align-items: center;
+        }
+        .modal-content {
+            background: white; border-radius: 15px; padding: 30px 40px; 
+            text-align: center; box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            animation: fadeIn 0.4s ease;
+        }
+        .check-icon { font-size: 50px; color: #28a745; margin-bottom: 15px; }
+        .modal-content h2 { margin-bottom: 10px; color: #333; }
+        .modal-content p { color: #555; font-size: 16px; }
+        #okButton {
+            margin-top: 15px; background-color: #28a745; color: white;
+            border: none; padding: 10px 25px; border-radius: 8px; cursor: pointer;
+        }
+        #okButton:hover { background-color: #218838; }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.9);}
+            to {opacity: 1; transform: scale(1);}
+        }
+    `;
+  document.head.appendChild(style);
 
-//     const name = document.getElementById("name").value.trim();
-//     const dept = document.getElementById("department").value.trim();
-//     const phone = document.getElementById("phone").value.trim();
+  // Close on OK
+  modal.querySelector("#okButton").addEventListener("click", () => {
+    modal.remove();
+    window.location.href = "../HomePage/KUCampusBite.html";
+  });
+}
 
-//     if (!name || !dept || !phone) {
-//         alert("Please fill in all fields before placing the order.");
-//         return;
-//     }
-
-//     const user = JSON.parse(localStorage.getItem("user"));
-//     const token = localStorage.getItem("token");
-
-//     if (!user || !user._id || !token) {
-//         alert("You must be logged in to place an order.");
-//         return;
-//     }
-
-//     const items = cart.map(item => ({
-//         menuItemId: item.menuItemId,
-//         price: item.price,
-//         quantity: item.quantity,
-//         name: item.name
-//     }));
-
-//     const totalAmount = items.reduce((acc, item) => acc + item.price * item.quantity, 0) + 50;
-
-//     const orderData = {
-//         userId: user._id,
-//         items,
-//         totalAmount,
-//         deliveryAddress: dept,
-//         paymentMethod: "cash"
-//     };
-
-//     console.log("Order Payload:", orderData);
-
-//     try {
-//         const response = await fetch("http://localhost:5000/api/orders", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//                 "Authorization": `Bearer ${token}`
-//             },
-//             body: JSON.stringify(orderData)
-//         });
-
-//         const result = await response.json();
-
-//         if (response.ok) {
-//             alert(`Order placed successfully!\n\nThank you, ${name}!\nWe’ll deliver to: ${dept}`);
-
-//             clearCart();
-//             loadCart();
-//             const orderSummary = document.getElementsByClassName("order-summary-container card")[0];
-//             if (orderSummary) {
-//                 orderSummary.innerHTML = "<p style='text-align: center; color: #777;'>Your order summary is empty.</p>";
-//             }
-//             document.getElementById("userForm").reset();
-//         } else {
-//             alert("" + result.message);
-//         }
-//     } catch (error) {
-//         console.error("Order Error:", error);
-//         alert("Something went wrong while placing your order.");
-//     }
-// });
-
-
-document.getElementById("userForm").addEventListener("submit", async function (e) {
+// ✅ Handle order form submission
+document
+  .getElementById("userForm")
+  .addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -146,91 +134,89 @@ document.getElementById("userForm").addEventListener("submit", async function (e
     const phone = document.getElementById("phone").value.trim();
 
     if (!name || !dept || !phone) {
-        alert("Please fill in all fields before placing the order.");
-        return;
+      alert("Please fill in all fields before placing the order.");
+      return;
     }
 
     const user = JSON.parse(localStorage.getItem("user"));
     const token = localStorage.getItem("token");
 
     if (!user || !user._id || !token) {
-        alert("You must be logged in to place an order.");
-        return;
+      alert("You must be logged in to place an order.");
+      return;
     }
 
     try {
-        // 🔹 Fetch fresh cart from backend (not localStorage)
-        const response = await fetch(`http://localhost:5000/api/cart?userId=${user._id}`, {
-            headers: {
-                "Authorization": `Bearer ${token}`
-            }
-        });
+      const response = await fetch(
+        `http://localhost:5000/api/cart?userId=${user._id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
 
-        if (!response.ok) throw new Error("Failed to fetch cart");
+      if (!response.ok) throw new Error("Failed to fetch cart");
 
-        const data = await response.json();
-        const cart = data.cart || [];
+      const data = await response.json();
+      const cart = data.cart || [];
 
-        if (cart.length === 0) {
-            alert("Your cart is empty.");
-            return;
+      if (cart.length === 0) {
+        alert("Your cart is empty.");
+        return;
+      }
+
+      const items = cart.map((item) => ({
+        menuItemId: item.menuItemId,
+        price: item.price,
+        quantity: item.quantity,
+        name: item.name,
+      }));
+
+      const totalAmount =
+        items.reduce((acc, item) => acc + item.price * item.quantity, 0) + 50;
+
+      const orderData = {
+        userId: user._id,
+        userName: name,
+        items,
+        totalAmount,
+        deliveryAddress: dept,
+        paymentMethod: "cash",
+      };
+
+      const orderResponse = await fetch("http://localhost:5000/api/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(orderData),
+      });
+
+      const result = await orderResponse.json();
+
+      if (orderResponse.ok) {
+        // 🔹 Replace alert with modal
+        showOrderSuccess(name, dept);
+
+        clearCart();
+        loadCart();
+
+        const orderSummary = document.getElementsByClassName(
+          "order-summary-container card"
+        )[0];
+        if (orderSummary) {
+          orderSummary.innerHTML =
+            "<p style='text-align: center; color: #777;'>Your order summary is empty.</p>";
         }
 
-        const items = cart.map(item => ({
-            menuItemId: item.menuItemId,
-            price: item.price,
-            quantity: item.quantity,
-            name: item.name
-        }));
-
-        const totalAmount = items.reduce((acc, item) => acc + item.price * item.quantity, 0) + 50;
-
-        const orderData = {
-            userId: user._id,
-            userName:name,
-            items,
-            totalAmount,
-            deliveryAddress: dept,
-            paymentMethod: "cash"
-        };
-
-        console.log("Order Payload:", orderData);
-
-        // 🔹 Send order to backend
-        const orderResponse = await fetch("http://localhost:5000/api/orders", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
-            },
-            body: JSON.stringify(orderData)
-        });
-
-        const result = await orderResponse.json();
-
-        if (orderResponse.ok) {
-            alert(`Order placed successfully!\n\nThank you, ${name}!\nWe’ll deliver to: ${dept}`);
-            
-
-            clearCart();  // clears frontend local cart if needed
-            loadCart();   // reloads cart from backend
-
-            const orderSummary = document.getElementsByClassName("order-summary-container card")[0];
-            if (orderSummary) {
-                orderSummary.innerHTML = "<p style='text-align: center; color: #777;'>Your order summary is empty.</p>";
-            }
-
-            document.getElementById("userForm").reset();
-            window.location.href="../HomePage/KUCampusBite.html"
-
-        } else {
-            alert("" + result.message);
-        }
+        document.getElementById("userForm").reset();
+      } else {
+        alert(result.message);
+      }
     } catch (error) {
-        console.error("Order Error:", error);
-        alert("Something went wrong while placing your order.");
+      console.error("Order Error:", error);
+      alert("Something went wrong while placing your order.");
     }
-});
-
+  });
 
 window.onload = loadCart;

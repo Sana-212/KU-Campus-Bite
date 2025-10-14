@@ -1,29 +1,11 @@
 import { addToCart } from "../Cart/addToCart.js";
 
+const BACKEND_BASE_URL = "http://localhost:5000"; // Define the base URL once
+
 const $ = id => document.getElementById(id);
 
 let qInput, decBtn, incBtn, addBtn;
 let currentItem = null;
-
-function toast(msg, danger = false) {
-    const el = document.createElement("div");
-    el.textContent = msg;
-    el.style.cssText = `
-        position: fixed;
-        left: 50%;
-        bottom: 26px;
-        transform: translateX(-50%);
-        padding: 12px 16px;
-        background: ${danger ? "#7a1f2a" : "#1d2a1d"};
-        border: 1px solid ${danger ? "#a22" : "#2c4"};
-        color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 10px 24px rgba(0,0,0,.35);
-        z-index: 9999;
-    `;
-    document.body.appendChild(el);
-    setTimeout(() => el.remove(), 1700);
-}
 
 function initElements() {
     qInput = $("quantity");
@@ -45,7 +27,13 @@ console.log(storedItem)
         canteen: storedItem.canteenName|| "Unknown Canteen"
     };
 
-    $("foodImage") && ($("foodImage").src = currentItem.image || '../images/placeholder.png');
+ let imageSrc = currentItem.image || '../images/placeholder.png';
+    // If the path starts with '/', prepend the base URL
+    if (imageSrc.startsWith('/')) {
+        imageSrc = `${BACKEND_BASE_URL}${imageSrc}`;
+    }
+
+    $("foodImage") && ($("foodImage").src = imageSrc);
     $("foodImage") && ($("foodImage").alt = currentItem.name);
     $("foodName") && ($("foodName").textContent = currentItem.name);
     $("canteenName") && ($("canteenName").textContent = currentItem.canteen);
@@ -100,10 +88,15 @@ function generateFoodCards(containerId, items) {
         const canteenName = item.canteenId?.name || item.canteenName ||
       item.canteenSlug || "Unknown Canteen";
 
+       let imageSrc = item.image || '../images/placeholder.png';
+        if (imageSrc.startsWith('/')) {
+            imageSrc = `${BACKEND_BASE_URL}${imageSrc}`;
+        }
+
         const card = document.createElement("div");
         card.className = "food-card";
         card.innerHTML = `
-            <img src="${item.image || '../images/placeholder.png'}" alt="${item.name}">
+             <img src="${imageSrc}" alt="${item.name}">
             <h3 class="food-name">${item.name}</h3>
             <p class="canteen-name">${canteenName}</p>
             <div class="price-row">
@@ -126,19 +119,44 @@ function generateFoodCards(containerId, items) {
         container.appendChild(card);
     });
 }
+
+
+function showToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const messageSpan = toast.querySelector('.toast-message');
+
+    messageSpan.textContent = message;
+    toast.classList.remove('hidden');
+    toast.classList.add('show');
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.classList.add('hidden'), 300); // hide after transition
+    }, 3000);
+}
+
+
+
+
 function initMainAddToCart() {
     const btn = $("addToCart");
     if (btn && currentItem) {
         btn.addEventListener("click", () => {
             const qty = +qInput.value || 1;
             addToCart({ ...currentItem, qty });
-
+            showToast(`${currentItem.name} added to cart!`);
         });
     }
 }
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     initElements();
     initItemDetails();
     initQuantityButtons();
     initMainAddToCart();
 });
+
+

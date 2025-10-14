@@ -2681,3 +2681,86 @@ textarea {
     padding-right: 0;
   }
 }
+
+
+
+
+/* Pagination container should have this class or ID for flex center */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+/* Pagination container should have this class or ID for flex center */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+/* Toast style for Item Detail Page */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Toast Notification Styles for main page */
+#toast-notification {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease; 
+}
+
+/* Class added by JS to initially hide the element */
+#toast-notification.hidden {
+  display: none;
+}
+
+/* Class added by JS to show the element */
+#toast-notification.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+
+
