@@ -1,4 +1,8 @@
 import { clearCart } from "../Cart/addToCart.js";
+console.log(
+  "🚀 Checkout page started, deliveryTime in localStorage:",
+  localStorage.getItem("deliveryTime")
+);
 
 const BACKEND_BASE_URL = "http://localhost:5000";
 
@@ -71,6 +75,51 @@ async function loadCart() {
     console.error("Error loading cart:", error);
     cartItemsContainer.innerHTML =
       "<p style='text-align: center; color: red;'>Failed to load cart.</p>";
+  }
+}
+
+// 🕒 Show Pre-Order Time
+function showPreOrderTime() {
+  let deliveryTime = localStorage.getItem("deliveryTime");
+  if (!deliveryTime) {
+    deliveryTime = "ASAP";
+    localStorage.setItem("deliveryTime", "ASAP");
+  }
+  console.log("🕒 showPreOrderTime() called, deliveryTime:", deliveryTime);
+
+  const orderSummary = document.querySelector(".order-summary-container");
+  if (!orderSummary) {
+    console.warn("❌ .order-summary-container not found.");
+    return;
+  }
+
+  // Remove previous time display to avoid duplicates
+  const existingTime = orderSummary.querySelector(".summary-line.time");
+  if (existingTime) existingTime.remove();
+
+  // Format 24-hour to 12-hour
+  let displayTime = deliveryTime;
+  if (deliveryTime !== "ASAP" && /^\d{2}:\d{2}$/.test(deliveryTime)) {
+    const [h, m] = deliveryTime.split(":");
+    let hour = parseInt(h, 10);
+    const ampm = hour >= 12 ? "PM" : "AM";
+    hour = hour % 12 || 12;
+    displayTime = `${hour}:${m} ${ampm}`;
+  }
+
+  // Create line for delivery time
+  const timeDiv = document.createElement("div");
+  timeDiv.classList.add("summary-line", "time");
+  timeDiv.innerHTML = `
+      <span><strong>Delivery Time:</strong></span>
+      <span>${displayTime}</span>
+  `;
+
+  const totalLine = orderSummary.querySelector(".total-line");
+  if (totalLine && totalLine.parentElement === orderSummary) {
+    orderSummary.insertBefore(timeDiv, totalLine);
+  } else {
+    orderSummary.appendChild(timeDiv);
   }
 }
 
@@ -173,6 +222,12 @@ document
 
       const totalAmount =
         items.reduce((acc, item) => acc + item.price * item.quantity, 0) + 50;
+      const deliveryTime = localStorage.getItem("deliveryTime") || "ASAP";
+      console.log("🕒 Delivery Time from localStorage:", deliveryTime);
+      console.log(
+        "🧠 LocalStorage deliveryTime:",
+        localStorage.getItem("deliveryTime")
+      );
 
       const orderData = {
         userId: user._id,
@@ -181,7 +236,11 @@ document
         totalAmount,
         deliveryAddress: dept,
         paymentMethod: "cash",
+        deliveryTime: deliveryTime,
       };
+      console.log("🕒 deliveryTime received from frontend:", deliveryTime);
+
+      console.log("📦 Order Payload:", orderData);
 
       const orderResponse = await fetch("http://localhost:5000/api/orders", {
         method: "POST",
@@ -199,6 +258,7 @@ document
         showOrderSuccess(name, dept);
 
         clearCart();
+        localStorage.removeItem("deliveryTime");
         loadCart();
 
         const orderSummary = document.getElementsByClassName(
@@ -219,4 +279,7 @@ document
     }
   });
 
-window.onload = loadCart;
+window.onload = () => {
+  loadCart();
+  showPreOrderTime();
+};

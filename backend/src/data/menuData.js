@@ -13,7 +13,7 @@ module.exports=[
     price: 60,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/kahva.jfif",
+    image: "/images/menu_items/kahva.jpg",
     category: "drinks"
   },
   {
@@ -21,15 +21,7 @@ module.exports=[
     price: 60,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/green_tea.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Masala Tea",
-    price: 80,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/masala_tea.jfif",
+    image: "/images/menu_items/green_tea.jpg",
     category: "drinks"
   },
   {
@@ -45,7 +37,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pina_colada_mocktail.jfif",
+    image: "/images/menu_items/pina_colada_mocktail.jpg",
     category: "drinks"
   },
   {
@@ -109,7 +101,7 @@ module.exports=[
     price: 80,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/gola_ganda_small.jfif",
+    image: "/images/menu_items/gola_ganda_small.jpg",
     category: "drinks"
   },
   {
@@ -117,7 +109,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/gola_ganda_large.jfif",
+    image: "/images/menu_items/gola_ganda_large.jpg",
     category: "drinks"
   },
   {
@@ -133,15 +125,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dates_shake.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Mango Shake",
-    price: 150,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/mango_shake.jfif",
+    image: "/images/menu_items/dates_shake.jpg",
     category: "drinks"
   },
   {
@@ -149,7 +133,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dates_banana_shake.jfif",
+    image: "/images/menu_items/dates_banana_shake.jpg",
     category: "drinks"
   },
   {
@@ -157,7 +141,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/oreo_shake.jfif",
+    image: "/images/menu_items/oreo_shake.jpg",
     category: "drinks"
   },
   {
@@ -189,15 +173,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/iced_latte.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Strawberry Shake",
-    price: 180,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/strawberry_shake.jfif",
+    image: "/images/menu_items/iced_latte.jpg",
     category: "drinks"
   },
   {
@@ -205,7 +181,7 @@ module.exports=[
     price: 200,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/hot_chocolate_shaked.jfif",
+    image: "/images/menu_items/hot_chocolate_shaked.jpg",
     category: "drinks"
   },
   {
@@ -213,7 +189,7 @@ module.exports=[
     price: 200,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/waffer_bar_shake.jfif",
+    image: "/images/menu_items/waffer_bar_shake.jpg",
     category: "drinks"
   },
   {
@@ -221,15 +197,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lemon_mojito.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Peach Mojito",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/peach_mojito.jfif",
+    image: "/images/menu_items/lemon_mojito.jpg",
     category: "drinks"
   },
   {
@@ -241,27 +209,11 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Grapes Mojito",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/grapes_mojito.jfif",
-    category: "drinks"
-  },
-  {
     name: "Pineapple Mojito",
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_mojito.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Strawberry Mojito",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/strawberry_mojito.jfif",
+    image: "/images/menu_items/pineapple_mojito.jpg",
     category: "drinks"
   },
   {
@@ -269,7 +221,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/guava_mojito.jfif",
+    image: "/images/menu_items/guava_mojito.jpg",
     category: "drinks"
   },
   {
@@ -277,7 +229,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/margarita_mojito.jfif",
+    image: "/images/menu_items/margarita_mojito.jpg",
     category: "drinks"
   },
   {
@@ -285,7 +237,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/bbq_fries.jfif",
+    image: "/images/menu_items/bbq_fries.jpg",
     category: "lunch"
   },
   {
@@ -301,15 +253,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/biryani.jfif",
-    category: "lunch"
-  },
-  {
-    name: "Chicken Burger",
-    price: 300,
-    canteenName: "Neelum Canteen",
-    available: true,
-    image: "/images/menu_items/chicken_burger.jfif",
+    image: "/images/menu_items/biryani.jpg",
     category: "lunch"
   },
   {
@@ -325,23 +269,15 @@ module.exports=[
     price: 250,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chicken_sandwich.jfif",
+    image: "/images/menu_items/chicken_sandwich.jpg",
     category: "lunch"
-  },
-  {
-    name: "Molten Lava Cake",
-    price: 100,
-    canteenName: "Neelum Canteen",
-    available: true,
-    image: "/images/menu_items/molten_lava_cake.jfif",
-    category: "dessert"
   },
   {
     name: "Apple Limca",
     price: 90,
     canteenName: "Neelum Canteen",
     available: false,
-    image: "/images/menu_items/apple_limca.jfif",
+    image: "/images/menu_items/apple_limca.jpg",
     category: "drinks"
   },
   {
@@ -353,27 +289,11 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Kahva",
-    price: 60,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/kahva.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Green Tea",
-    price: 60,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/green_tea.jfif",
-    category: "drinks"
-  },
-  {
     name: "Masala Tea",
     price: 80,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/masala_tea.jfif",
+    image: "/images/menu_items/masala_tea.jpg",
     category: "drinks"
   },
   {
@@ -382,14 +302,6 @@ module.exports=[
     canteenName: "Baba Food Canteen",
     available: true,
     image: "/images/menu_items/coffee.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Pina Colada Mocktail",
-    price: 150,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/pina_colada_mocktail.jfif",
     category: "drinks"
   },
   {
@@ -409,27 +321,11 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Cooling Punch Mocktail",
-    price: 250,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/cooling_punch_mocktail.jfif",
-    category: "drinks"
-  },
-  {
     name: "Caramel Crunch Mocktail",
     price: 250,
     canteenName: "Baba Food Canteen",
     available: true,
     image: "/images/menu_items/caramel_crunch_mocktail.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Strawberry Magic Mocktail",
-    price: 250,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/strawberry_magic_mocktail.jfif",
     category: "drinks"
   },
   {
@@ -449,22 +345,6 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Gola Ganda Small",
-    price: 80,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/gola_ganda_small.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Gola Ganda Large",
-    price: 150,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/gola_ganda_large.jfif",
-    category: "drinks"
-  },
-  {
     name: "Banana Shake",
     price: 120,
     canteenName: "Baba Food Canteen",
@@ -473,35 +353,11 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Dates Shake",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/dates_shake.jfif",
-    category: "drinks"
-  },
-  {
     name: "Mango Shake",
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mango_shake.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Banana+Dates Shake",
-    price: 150,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/dates_banana_shake.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Oreo Shake",
-    price: 150,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/oreo_shake.jfif",
+    image: "/images/menu_items/mango_shake.jpg",
     category: "drinks"
   },
   {
@@ -529,27 +385,11 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Iced Latte",
-    price: 150,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/iced_latte.jfif",
-    category: "drinks"
-  },
-  {
     name: "Strawberry Shake",
     price: 180,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_shake.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Hot Chocolate Shake",
-    price: 200,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/hot_chocolate_shake.jfif",
+    image: "/images/menu_items/strawberry_shake.jpg",
     category: "drinks"
   },
   {
@@ -561,19 +401,11 @@ module.exports=[
     category: "drinks"
   },
   {
-    name: "Lemon Mojito",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/lemon_mojito.jfif",
-    category: "drinks"
-  },
-  {
     name: "Peach Mojito",
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/peach_mojito.jfif",
+    image: "/images/menu_items/peach_mojito.jpg",
     category: "drinks"
   },
   {
@@ -589,15 +421,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/grapes_mojito.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Pineapple Mojito",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/pineapple_mojito.jfif",
+    image: "/images/menu_items/grapes_mojito.jpg",
     category: "drinks"
   },
   {
@@ -605,15 +429,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_mojito.jfif",
-    category: "drinks"
-  },
-  {
-    name: "Guava Mojito",
-    price: 120,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/guava_mojito.jfif",
+    image: "/images/menu_items/strawberry_mojito.jpg",
     category: "drinks"
   },
   {
@@ -621,7 +437,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/kulki_soda_limca.jfif",
+    image: "/images/menu_items/kulki_soda_limca.jpg",
     category: "drinks"
   },
   {
@@ -637,7 +453,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_limca.jfif",
+    image: "/images/menu_items/pineapple_limca.jpg",
     category: "drinks"
   },
   {
@@ -645,7 +461,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/peach_limca.jfif",
+    image: "/images/menu_items/peach_limca.jpg",
     category: "drinks"
   },
   {
@@ -653,7 +469,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/leechi_limca.jfif",
+    image: "/images/menu_items/leechi_limca.jpg",
     category: "drinks"
   },
   {
@@ -661,7 +477,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pakola_limca.jfif",
+    image: "/images/menu_items/pakola_limca.jpg",
     category: "drinks"
   },
   {
@@ -669,7 +485,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pina_colada_limca.jfif",
+    image: "/images/menu_items/pina_colada_limca.jpg",
     category: "drinks"
   },
   {
@@ -677,7 +493,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lemon_limca.jfif",
+    image: "/images/menu_items/lemon_limca.jpg",
     category: "drinks"
   },
   {
@@ -685,7 +501,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/grapes_limca.jfif",
+    image: "/images/menu_items/grapes_limca.jpg",
     category: "drinks"
   },
   {
@@ -693,7 +509,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/ginger_limca.jfif",
+    image: "/images/menu_items/ginger_limca.jpg",
     category: "drinks"
   },
   {
@@ -701,7 +517,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_limca.jfif",
+    image: "/images/menu_items/strawberry_limca.jpg",
     category: "drinks"
   },
   {
@@ -709,7 +525,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mango_limca.jfif",
+    image: "/images/menu_items/mango_limca.jpg",
     category: "drinks"
   },
   {
@@ -733,7 +549,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/guava_limca.jfif",
+    image: "/images/menu_items/guava_limca.jpg",
     category: "drinks"
   },
   {
@@ -741,7 +557,7 @@ module.exports=[
     price: 90,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mint_limca.jfif",
+    image: "/images/menu_items/mint_limca.jpg",
     category: "drinks"
   },
   {
@@ -749,7 +565,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_candy_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_candy_waffle.jpg",
     category: "dessert"
   },
   {
@@ -757,7 +573,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_oreo_crunch_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_oreo_crunch_waffle.jpg",
     category: "dessert"
   },
   {
@@ -765,7 +581,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "chocolate_spread_crushed_coco_crunch_waffle.jfif",
+    image: "chocolate_spread_crushed_coco_crunch_waffle.jpg",
     category: "dessert"
   },
   {
@@ -773,7 +589,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_marshmellow_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_marshmellow_waffle.jpg",
     category: "dessert"
   },
   {
@@ -781,7 +597,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_m&m_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_m&m_waffle.jpg",
     category: "dessert"
   },
   {
@@ -789,7 +605,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_chocolate_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_chocolate_waffle.jpg",
     category: "dessert"
   },
   {
@@ -797,7 +613,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_waffer_bar_waffle_(half).jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_waffer_bar_waffle_(half).jpg",
     category: "dessert"
   },
   {
@@ -805,7 +621,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_candy_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_candy_waffle.jpg",
     category: "dessert"
   },
   {
@@ -813,7 +629,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_oreo_crunch_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_oreo_crunch_waffle.jpg",
     category: "dessert"
   },
   {
@@ -821,7 +637,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_coco_crunch_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_coco_crunch_waffle.jpg",
     category: "dessert"
   },
   {
@@ -829,7 +645,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_marshmellow_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_marshmellow_waffle.jpg",
     category: "dessert"
   },
   {
@@ -837,7 +653,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_m&m_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_m&m_waffle.jpg",
     category: "dessert"
   },
   {
@@ -845,7 +661,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_chocolate_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_chocolate_waffle.jpg",
     category: "dessert"
   },
   {
@@ -853,7 +669,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_waffer_bar_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_waffer_bar_waffle.jpg",
     category: "dessert"
   },
   {
@@ -861,7 +677,7 @@ module.exports=[
     price: 420,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_candy_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_candy_waffle.jpg",
     category: "dessert"
   },
   {
@@ -869,7 +685,7 @@ module.exports=[
     price: 420,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_oreo_crunch_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_oreo_crunch_waffle.jpg",
     category: "dessert"
   },
   {
@@ -877,7 +693,7 @@ module.exports=[
     price: 420,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_coco_crunch_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_coco_crunch_waffle.jpg",
     category: "dessert"
   },
   {
@@ -885,7 +701,7 @@ module.exports=[
     price: 420,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_marshmellow_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_marshmellow_waffle.jpg",
     category: "dessert"
   },
   {
@@ -893,7 +709,7 @@ module.exports=[
     price: 420,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_m&m_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_m&m_waffle.jpg",
     category: "dessert"
   },
   {
@@ -901,7 +717,7 @@ module.exports=[
     price: 420,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chocolate_spread_crushed_chocolate_waffle.jfif",
+    image: "/images/menu_items/chocolate_spread_crushed_chocolate_waffle.jpg",
     category: "dessert"
   },
   {
@@ -909,7 +725,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/molten_lava_cake.jfif",
+    image: "/images/menu_items/molten_lava_cake.jpg",
     category: "dessert"
   },
   {
@@ -917,7 +733,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/molten_lava_cake.jfif",
+    image: "/images/menu_items/molten_lava_cake.jpg",
     category: "dessert"
   },
   {
@@ -925,7 +741,7 @@ module.exports=[
     price: 170,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_creamy_cocktail.jfif",
+    image: "/images/menu_items/strawberry_creamy_cocktail.jpg",
     category: "dessert"
   },
   {
@@ -941,7 +757,7 @@ module.exports=[
     price: 170,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mango_creamy_cocktail.jfif",
+    image: "/images/menu_items/mango_creamy_cocktail.jpg",
     category: "dessert"
   },
   {
@@ -957,7 +773,7 @@ module.exports=[
     price: 480,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/fire_house_chicken_burger.jfif",
+    image: "/images/menu_items/fire_house_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -965,7 +781,7 @@ module.exports=[
     price: 500,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/supreme_crunch_chicken_burger.jfif",
+    image: "/images/menu_items/supreme_crunch_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -981,7 +797,7 @@ module.exports=[
     price: 450,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/melt_muscle_beef_burger.jfif",
+    image: "/images/menu_items/melt_muscle_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -989,15 +805,7 @@ module.exports=[
     price: 450,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/swiss_mushroom_melt_beef_burger.jfif",
-    category: "lunch"
-  },
-  {
-    name: "Chicken Sandwich",
-    price: 250,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/chicken_sandwich.jfif",
+    image: "/images/menu_items/swiss_mushroom_melt_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1005,7 +813,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/club_sandwich.jfif",
+    image: "/images/menu_items/club_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -1013,7 +821,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/bbq_club_sandwich.jfif",
+    image: "/images/menu_items/bbq_club_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -1021,7 +829,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/crispy_club_sandwich.jfif",
+    image: "/images/menu_items/crispy_club_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -1029,7 +837,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lava_cheesy_sandwich.jfif",
+    image: "/images/menu_items/lava_cheesy_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -1037,7 +845,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/honey_mustard_beef_burger.jfif",
+    image: "/images/menu_items/honey_mustard_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1061,7 +869,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mayo_garlic_beef_burger.jfif",
+    image: "/images/menu_items/mayo_garlic_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1069,7 +877,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/peri_peri_beef_burger.jfif",
+    image: "/images/menu_items/peri_peri_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1077,7 +885,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/vintage_beef_burger.jfif",
+    image: "/images/menu_items/vintage_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1085,7 +893,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dynamite_beef_burger.jfif",
+    image: "/images/menu_items/dynamite_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1109,7 +917,7 @@ module.exports=[
     price: 280,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/shotgun_bbq_beef_burger.jfif",
+    image: "/images/menu_items/shotgun_bbq_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1117,7 +925,7 @@ module.exports=[
     price: 650,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/triple_decker_beef_burger.jfif",
+    image: "/images/menu_items/triple_decker_beef_burger.jpg",
     category: "lunch"
   },
   {
@@ -1133,7 +941,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/red_sauce_macroni_bowl.jfif",
+    image: "/images/menu_items/red_sauce_macroni_bowl.jpg",
     category: "lunch"
   },
   {
@@ -1141,7 +949,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/singaporean_macaroni_bowl.jfif",
+    image: "/images/menu_items/singaporean_macaroni_bowl.jpg",
     category: "lunch"
   },
   {
@@ -1149,7 +957,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/khatte_alu.jfif",
+    image: "/images/menu_items/khatte_alu.jpg",
     category: "snacks"
   },
   {
@@ -1165,7 +973,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/karhi_chola.jfif",
+    image: "/images/menu_items/karhi_chola.jpg",
     category: "snacks"
   },
   {
@@ -1189,7 +997,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/crispy_zinger_burger.jfif",
+    image: "/images/menu_items/crispy_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1197,7 +1005,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/peri_peri_zinger_burger.jfif",
+    image: "/images/menu_items/peri_peri_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1205,7 +1013,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mayo_garlic_zinger_burger.jfif",
+    image: "/images/menu_items/mayo_garlic_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1229,7 +1037,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/honey_mustard_zinger_burger.jfif",
+    image: "/images/menu_items/honey_mustard_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1237,7 +1045,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dynamite_zinger_burger.jfif",
+    image: "/images/menu_items/dynamite_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1261,7 +1069,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/jalapeno_zinger_burger.jfif",
+    image: "/images/menu_items/jalapeno_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1269,7 +1077,7 @@ module.exports=[
     price: 650,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/triple_decker_zinger_burger.jfif",
+    image: "/images/menu_items/triple_decker_zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -1285,7 +1093,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/peri_peri_chicken_burger.jfif",
+    image: "/images/menu_items/peri_peri_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -1293,7 +1101,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mayo_garlic_chicken_burger.jfif",
+    image: "/images/menu_items/mayo_garlic_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -1317,7 +1125,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/honey_mustard_chicken_burger.jfif",
+    image: "/images/menu_items/honey_mustard_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -1325,7 +1133,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dynamite_chicken_burger.jfif",
+    image: "/images/menu_items/dynamite_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -1349,7 +1157,7 @@ module.exports=[
     price: 280,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/smokey_bbq_chicken_burger.jfif",
+    image: "/images/menu_items/smokey_bbq_chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -1365,7 +1173,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/matka_biryani_solo_serving.jfif",
+    image: "/images/menu_items/matka_biryani_solo_serving.jpg",
     category: "lunch"
   },
   {
@@ -1373,7 +1181,7 @@ module.exports=[
     price: 700,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/matka_biryani_duo_serving.jfif",
+    image: "/images/menu_items/matka_biryani_duo_serving.jpg",
     category: "lunch"
   },
   {
@@ -1381,7 +1189,7 @@ module.exports=[
     price: 1000,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/matka_biryani_trio_serving.jfif",
+    image: "/images/menu_items/matka_biryani_trio_serving.jpg",
     category: "lunch"
   },
   {
@@ -1389,7 +1197,7 @@ module.exports=[
     price: 220,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/vegetable_fried_rice.jfif",
+    image: "/images/menu_items/vegetable_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1405,7 +1213,7 @@ module.exports=[
     price: 240,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/egg_fried_rice.jfif",
+    image: "/images/menu_items/egg_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1421,7 +1229,7 @@ module.exports=[
     price: 280,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/fried_rice_with_chapli_kabab.jfif",
+    image: "/images/menu_items/fried_rice_with_chapli_kabab.jpg",
     category: "lunch"
   },
   {
@@ -1429,7 +1237,7 @@ module.exports=[
     price: 280,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/fried_rice_with_seekh_kabab.jfif",
+    image: "/images/menu_items/fried_rice_with_seekh_kabab.jpg",
     category: "lunch"
   },
   {
@@ -1437,7 +1245,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/tikka_fried_rice.jfif",
+    image: "/images/menu_items/tikka_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1453,7 +1261,7 @@ module.exports=[
     price: 250,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/singaporean_rice.jfif",
+    image: "/images/menu_items/singaporean_rice.jpg",
     category: "lunch"
   },
   {
@@ -1477,7 +1285,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dragon_chicken_fried_rice.jfif",
+    image: "/images/menu_items/dragon_chicken_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1485,7 +1293,7 @@ module.exports=[
     price: 330,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dragon_chicken_kofta_fried_rice.jfif",
+    image: "/images/menu_items/dragon_chicken_kofta_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1493,7 +1301,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/fajita_chicken_rice.jfif",
+    image: "/images/menu_items/fajita_chicken_rice.jpg",
     category: "lunch"
   },
   {
@@ -1501,7 +1309,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/schezwan_chicken_fried_rice.jfif",
+    image: "/images/menu_items/schezwan_chicken_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1509,7 +1317,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/kung_pao_chicken_fried_rice.jfif",
+    image: "/images/menu_items/kung_pao_chicken_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1517,7 +1325,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/sweet_chilli_chicken_fried_rice.jfif",
+    image: "/images/menu_items/sweet_chilli_chicken_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1525,7 +1333,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chicken_jalfrezi_fried_rice.jfif",
+    image: "/images/menu_items/chicken_jalfrezi_fried_rice.jpg",
     category: "lunch"
   },
   {
@@ -1533,7 +1341,7 @@ module.exports=[
     price: 450,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/salt_&_pepper_chicken_&_chips.jfif",
+    image: "/images/menu_items/salt_&_pepper_chicken_&_chips.jpg",
     category: "lunch"
   },
   {
@@ -1549,7 +1357,7 @@ module.exports=[
     price: 320,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/garlic_pasta.jfif",
+    image: "/images/menu_items/garlic_pasta.jpg",
     category: "lunch"
   },
   {
@@ -1557,7 +1365,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/malai_pasta.jfif",
+    image: "/images/menu_items/malai_pasta.jpg",
     category: "lunch"
   },
   {
@@ -1565,7 +1373,7 @@ module.exports=[
     price: 350,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pink_sauce_pasta.jfif",
+    image: "/images/menu_items/pink_sauce_pasta.jpg",
     category: "lunch"
   },
   {
@@ -1573,7 +1381,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/cheesy_pasta.jfif",
+    image: "/images/menu_items/cheesy_pasta.jpg",
     category: "lunch"
   },
   {
@@ -1581,7 +1389,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/spaghetti_20.jfif",
+    image: "/images/menu_items/spaghetti_20.jpg",
     category: "lunch"
   },
   {
@@ -1589,7 +1397,7 @@ module.exports=[
     price: 220,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/vegetable_chow_mien.jfif",
+    image: "/images/menu_items/vegetable_chow_mien.jpg",
     category: "lunch"
   },
   {
@@ -1605,7 +1413,7 @@ module.exports=[
     price: 280,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dragon_chow_mien.jfif",
+    image: "/images/menu_items/dragon_chow_mien.jpg",
     category: "lunch"
   },
   {
@@ -1613,7 +1421,7 @@ module.exports=[
     price: 280,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/singaporean_chow_mien.jfif",
+    image: "/images/menu_items/singaporean_chow_mien.jpg",
     category: "lunch"
   },
   {
@@ -1629,7 +1437,7 @@ module.exports=[
     price: 320,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/special_chow_mien.jfif",
+    image: "/images/menu_items/special_chow_mien.jpg",
     category: "lunch"
   },
   {
@@ -1637,7 +1445,7 @@ module.exports=[
     price: 250,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pizza_cone.jfif",
+    image: "/images/menu_items/pizza_cone.jpg",
     category: "snacks"
   },
   {
@@ -1645,7 +1453,7 @@ module.exports=[
     price: 250,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pan_pizza.jfif",
+    image: "/images/menu_items/pan_pizza.jpg",
     category: "snacks"
   },
   {
@@ -1653,7 +1461,7 @@ module.exports=[
     price: 300,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/kulhad_pizza.jfif",
+    image: "/images/menu_items/kulhad_pizza.jpg",
     category: "snacks"
   },
   {
@@ -1669,7 +1477,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/matka_fries.jfif",
+    image: "/images/menu_items/matka_fries.jpg",
     category: "snacks"
   },
   {
@@ -1677,7 +1485,7 @@ module.exports=[
     price: 450,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pizza_fries.jfif",
+    image: "/images/menu_items/pizza_fries.jpg",
     category: "snacks"
   },
   {
@@ -1685,7 +1493,7 @@ module.exports=[
     price: 400,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lasagna.jfif",
+    image: "/images/menu_items/lasagna.jpg",
     category: "snacks"
   },
   {
@@ -1693,7 +1501,7 @@ module.exports=[
     price: 450,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/mac_n_cheese_pasta.jfif",
+    image: "/images/menu_items/mac_n_cheese_pasta.jpg",
     category: "snacks"
   },
   {
@@ -1701,7 +1509,7 @@ module.exports=[
     price: 480,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pizza_burger.jfif",
+    image: "/images/menu_items/pizza_burger.jpg",
     category: "snacks"
   },
   {
@@ -1709,7 +1517,7 @@ module.exports=[
     price: 480,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pizza_sandwich.jfif",
+    image: "/images/menu_items/pizza_sandwich.jpg",
     category: "snacks"
   },
   {
@@ -1789,7 +1597,7 @@ module.exports=[
     price: 60,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/malai_boti_roll.jfif",
+    image: "/images/menu_items/malai_boti_roll.jpg",
     category: "snacks"
   },
   {
@@ -1805,7 +1613,7 @@ module.exports=[
     price: 70,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/peri_bite.jfif",
+    image: "/images/menu_items/peri_bite.jpg",
     category: "snacks"
   },
   {
@@ -1813,7 +1621,7 @@ module.exports=[
     price: 130,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/kababish_roll.jfif",
+    image: "/images/menu_items/kababish_roll.jpg",
     category: "snacks"
   },
   {
@@ -1821,7 +1629,7 @@ module.exports=[
     price: 180,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/tiger_roll_20.jfif",
+    image: "/images/menu_items/tiger_roll_20.jpg",
     category: "snacks"
   },
   {
@@ -1837,7 +1645,7 @@ module.exports=[
     price: 50,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lava_cheese_samosa.jfif",
+    image: "/images/menu_items/lava_cheese_samosa.jpg",
     category: "snacks"
   },
   {
@@ -1853,7 +1661,7 @@ module.exports=[
     price: 60,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lava_cheese_roll.jfif",
+    image: "/images/menu_items/lava_cheese_roll.jpg",
     category: "snacks"
   },
   {
@@ -1861,7 +1669,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/dynamite_roll.jfif",
+    image: "/images/menu_items/dynamite_roll.jpg",
     category: "snacks"
   },
   {
@@ -1869,7 +1677,7 @@ module.exports=[
     price: 180,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/lifafa_e_ulfat_e_paneer.jfif",
+    image: "/images/menu_items/lifafa_e_ulfat_e_paneer.jpg",
     category: "snacks"
   },
   {
@@ -1877,7 +1685,7 @@ module.exports=[
     price: 180,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/pizza_bomb.jfif",
+    image: "/images/menu_items/pizza_bomb.jpg",
     category: "snacks"
   },
   {
@@ -1901,7 +1709,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/potato_popsicle.jfif",
+    image: "/images/menu_items/potato_popsicle.jpg",
     category: "snacks"
   },
   {
@@ -1909,15 +1717,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/plain_fries.jfif",
-    category: "snacks"
-  },
-  {
-    name: "BBQ Fries",
-    price: 100,
-    canteenName: "Baba Food Canteen",
-    available: true,
-    image: "/images/menu_items/bbq_fries.jfif",
+    image: "/images/menu_items/plain_fries.jpg",
     category: "snacks"
   },
   {
@@ -1925,7 +1725,7 @@ module.exports=[
     price: 100,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/garlic_fries.jfif",
+    image: "/images/menu_items/garlic_fries.jpg",
     category: "snacks"
   },
   {
@@ -1941,7 +1741,7 @@ module.exports=[
     price: 250,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/waffle_fries.jfif",
+    image: "/images/menu_items/waffle_fries.jpg",
     category: "snacks"
   },
   {
@@ -1949,7 +1749,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/tornado_fries.jfif",
+    image: "/images/menu_items/tornado_fries.jpg",
     category: "snacks"
   },
   {
@@ -1957,7 +1757,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chatni_roll.jfif",
+    image: "/images/menu_items/chicken_chatni_roll.jpg",
     category: "lunch"
   },
   {
@@ -1973,7 +1773,7 @@ module.exports=[
     price: 120,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/potato_roll.jfif",
+    image: "/images/menu_items/potato_roll.jpg",
     category: "lunch"
   },
   {
@@ -2005,7 +1805,7 @@ module.exports=[
     price: 150,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chapata_roll.jfif",
+    image: "/images/menu_items/chicken_chapata_roll.jpg",
     category: "lunch"
   },
   {
@@ -2021,7 +1821,7 @@ module.exports=[
     price: 200,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/chicken_cheese_roll.jfif",
+    image: "/images/menu_items/chicken_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -2061,7 +1861,7 @@ module.exports=[
     price: 180,
     canteenName: "Baba Food Canteen",
     available: true,
-    image: "/images/menu_items/zinger_roll.jfif",
+    image: "/images/menu_items/zinger_roll.jpg",
     category: "lunch"
   },
   {
@@ -2093,7 +1893,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_burger.jfif",
+    image: "/images/menu_items/chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -2101,7 +1901,7 @@ module.exports=[
     price: 100,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/molten_lava_cake.jfif",
+    image: "/images/menu_items/molten_lava_cake.jpg",
     category: "dessert"
   },
   {
@@ -2117,7 +1917,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_cherry_juice.jfif",
+    image: "/images/menu_items/fresh_cherry_juice.jpg",
     category: "drinks"
   },
   {
@@ -2125,7 +1925,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_pineapple_juice.jfif",
+    image: "/images/menu_items/fresh_pineapple_juice.jpg",
     category: "drinks"
   },
   {
@@ -2133,7 +1933,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_applic_juice.jfif",
+    image: "/images/menu_items/fresh_applic_juice.jpg",
     category: "drinks"
   },
   {
@@ -2141,7 +1941,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_grey_fruit_juice.jfif",
+    image: "/images/menu_items/fresh_grey_fruit_juice.jpg",
     category: "drinks"
   },
   {
@@ -2149,7 +1949,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_mosami_juice.jfif",
+    image: "/images/menu_items/fresh_mosami_juice.jpg",
     category: "drinks"
   },
   {
@@ -2157,7 +1957,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_annar_juice.jfif",
+    image: "/images/menu_items/fresh_annar_juice.jpg",
     category: "drinks"
   },
   {
@@ -2165,7 +1965,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_strawberry_juice.jfif",
+    image: "/images/menu_items/fresh_strawberry_juice.jpg",
     category: "drinks"
   },
   {
@@ -2173,7 +1973,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_peach_juice.jfif",
+    image: "/images/menu_items/fresh_peach_juice.jpg",
     category: "drinks"
   },
   {
@@ -2181,7 +1981,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_mango_juice.jfif",
+    image: "/images/menu_items/fresh_mango_juice.jpg",
     category: "drinks"
   },
   {
@@ -2189,7 +1989,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_kiwi_juice.jfif",
+    image: "/images/menu_items/fresh_kiwi_juice.jpg",
     category: "drinks"
   },
   {
@@ -2197,7 +1997,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_orange_juice.jfif",
+    image: "/images/menu_items/fresh_orange_juice.jpg",
     category: "drinks"
   },
   {
@@ -2205,7 +2005,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_grapes_juice.jfif",
+    image: "/images/menu_items/fresh_grapes_juice.jpg",
     category: "drinks"
   },
   {
@@ -2213,7 +2013,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_carrot_juice.jfif",
+    image: "/images/menu_items/fresh_carrot_juice.jpg",
     category: "drinks"
   },
   {
@@ -2221,7 +2021,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_papaya_juice.jfif",
+    image: "/images/menu_items/fresh_papaya_juice.jpg",
     category: "drinks"
   },
   {
@@ -2229,7 +2029,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_guava_juice.jfif",
+    image: "/images/menu_items/fresh_guava_juice.jpg",
     category: "drinks"
   },
   {
@@ -2237,7 +2037,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fresh_falsa_juice.jfif",
+    image: "/images/menu_items/fresh_falsa_juice.jpg",
     category: "drinks"
   },
   {
@@ -2245,7 +2045,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_with_kiwi_cocktail_juice.jfif",
+    image: "/images/menu_items/pineapple_with_kiwi_cocktail_juice.jpg",
     category: "drinks"
   },
   {
@@ -2253,7 +2053,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_with_strawberry_cocktail_juice.jfif",
+    image: "/images/menu_items/pineapple_with_strawberry_cocktail_juice.jpg",
     category: "drinks"
   },
   {
@@ -2261,7 +2061,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_with_peach_cocktail_juice.jfif",
+    image: "/images/menu_items/pineapple_with_peach_cocktail_juice.jpg",
     category: "drinks"
   },
   {
@@ -2269,7 +2069,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_with_grapes_cocktail_juice.jfif",
+    image: "/images/menu_items/pineapple_with_grapes_cocktail_juice.jpg",
     category: "drinks"
   },
   {
@@ -2317,7 +2117,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/carrot_with_orange_cocktail_Juice.jfif",
+    image: "/images/menu_items/carrot_with_orange_cocktail_Juice.jpg",
     category: "drinks"
   },
   {
@@ -2325,7 +2125,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/carrot_orange_chukandar_cocktail_Juice.jfif",
+    image: "/images/menu_items/carrot_orange_chukandar_cocktail_Juice.jpg",
     category: "drinks"
   },
   {
@@ -2333,7 +2133,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/carrot_with_chukandar_cocktail_Juice.jfif",
+    image: "/images/menu_items/carrot_with_chukandar_cocktail_Juice.jpg",
     category: "drinks"
   },
   {
@@ -2341,7 +2141,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/kiwi_with_apple_cocktail_Juice.jfif",
+    image: "/images/menu_items/kiwi_with_apple_cocktail_Juice.jpg",
     category: "drinks"
   },
   {
@@ -2349,7 +2149,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/kiwi_with_peach_cocktail_Juice.jfif",
+    image: "/images/menu_items/kiwi_with_peach_cocktail_Juice.jpg",
     category: "drinks"
   },
   {
@@ -2357,7 +2157,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/grey_fruit_with_orange_cocktail_juice.jfif",
+    image: "/images/menu_items/grey_fruit_with_orange_cocktail_juice.jpg",
     category: "drinks"
   },
   {
@@ -2365,7 +2165,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/grey_fruit_with_mosami_cocktail_juice.jfif",
+    image: "/images/menu_items/grey_fruit_with_mosami_cocktail_juice.jpg",
     category: "drinks"
   },
   {
@@ -2373,7 +2173,7 @@ module.exports=[
     price: 250,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/protein_shake.jfif",
+    image: "/images/menu_items/protein_shake.jpg",
     category: "drinks"
   },
   {
@@ -2381,7 +2181,7 @@ module.exports=[
     price: 250,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/khoya_khajoor_milk_shake.jfif",
+    image: "/images/menu_items/khoya_khajoor_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2389,7 +2189,7 @@ module.exports=[
     price: 250,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/injeer_milk_shake.jfif",
+    image: "/images/menu_items/injeer_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2397,7 +2197,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/pineapple_shake.jfif",
+    image: "/images/menu_items/pineapple_shake.jpg",
     category: "drinks"
   },
   {
@@ -2405,7 +2205,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/dates_shake.jfif",
+    image: "/images/menu_items/dates_shake.jpg",
     category: "drinks"
   },
   {
@@ -2429,7 +2229,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/mango_shake.jfif",
+    image: "/images/menu_items/mango_shake.jpg",
     category: "drinks"
   },
   {
@@ -2437,7 +2237,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/peach_shake.jfif",
+    image: "/images/menu_items/peach_shake.jpg",
     category: "drinks"
   },
   {
@@ -2445,7 +2245,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/grapes_shake.jfif",
+    image: "/images/menu_items/grapes_shake.jpg",
     category: "drinks"
   },
   {
@@ -2453,7 +2253,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/kiwi_shake.jfif",
+    image: "/images/menu_items/kiwi_shake.jpg",
     category: "drinks"
   },
   {
@@ -2461,7 +2261,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/oreo_chocolate_shake.jfif",
+    image: "/images/menu_items/oreo_chocolate_shake.jpg",
     category: "drinks"
   },
   {
@@ -2469,7 +2269,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_shake.jfif",
+    image: "/images/menu_items/strawberry_shake.jpg",
     category: "drinks"
   },
   {
@@ -2477,7 +2277,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sapple_shake.jfif",
+    image: "/images/menu_items/sapple_shake.jpg",
     category: "drinks"
   },
   {
@@ -2501,7 +2301,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/papaya_shake.jfif",
+    image: "/images/menu_items/papaya_shake.jpg",
     category: "drinks"
   },
   {
@@ -2525,7 +2325,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/injeer_with_dates_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/injeer_with_dates_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2549,7 +2349,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/dates_with_chocolate_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/dates_with_chocolate_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2557,7 +2357,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_with_dates_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/strawberry_with_dates_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2565,7 +2365,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/mango_with_pineapple_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/mango_with_pineapple_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2581,7 +2381,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/strawberry_with_pineapple_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/strawberry_with_pineapple_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2589,7 +2389,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/peach_with_pineapple_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/peach_with_pineapple_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2629,7 +2429,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/mango_with_banana_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/mango_with_banana_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2645,7 +2445,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/banana_with_chicko_cocktail_milk_shake.jfif",
+    image: "/images/menu_items/banana_with_chicko_cocktail_milk_shake.jpg",
     category: "drinks"
   },
   {
@@ -2669,7 +2469,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_burger_with_fries.jfif",
+    image: "/images/menu_items/chicken_burger_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2677,7 +2477,7 @@ module.exports=[
     price: 260,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_cheese_burger_with_fries.jfif",
+    image: "/images/menu_items/chicken_cheese_burger_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2717,7 +2517,7 @@ module.exports=[
     price: 100,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_burger.jfif",
+    image: "/images/menu_items/sada_burger.jpg",
     category: "lunch"
   },
   {
@@ -2725,7 +2525,7 @@ module.exports=[
     price: 160,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_cheese_burger.jfif",
+    image: "/images/menu_items/sada_cheese_burger.jpg",
     category: "lunch"
   },
   {
@@ -2741,7 +2541,7 @@ module.exports=[
     price: 360,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/zinger_cheese_burger_with_fries.jfif",
+    image: "/images/menu_items/zinger_cheese_burger_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2749,7 +2549,7 @@ module.exports=[
     price: 250,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/tikka_burger_with_fries.jfif",
+    image: "/images/menu_items/tikka_burger_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2757,7 +2557,7 @@ module.exports=[
     price: 310,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/tikka_cheese_burger_with_fries.jfif",
+    image: "/images/menu_items/tikka_cheese_burger_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2765,7 +2565,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_sandwich_with_fries.jfif",
+    image: "/images/menu_items/chicken_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2781,7 +2581,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/beef_sandwich_with_fries.jfif",
+    image: "/images/menu_items/beef_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2797,7 +2597,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_kabab_sandwich.jfif",
+    image: "/images/menu_items/sada_kabab_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -2805,7 +2605,7 @@ module.exports=[
     price: 180,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_kabab_cheese_sandwich.jfif",
+    image: "/images/menu_items/sada_kabab_cheese_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -2829,7 +2629,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/only_anda_sandwich.jfif",
+    image: "/images/menu_items/only_anda_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -2837,7 +2637,7 @@ module.exports=[
     price: 180,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/only_anda_cheese_sandwich.jfif",
+    image: "/images/menu_items/only_anda_cheese_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -2845,7 +2645,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/club_sandwich_with_fries.jfif",
+    image: "/images/menu_items/club_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2853,7 +2653,7 @@ module.exports=[
     price: 360,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/club_sandwich_cheese_with_fries.jfif",
+    image: "/images/menu_items/club_sandwich_cheese_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2861,7 +2661,7 @@ module.exports=[
     price: 250,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/tikka_sandwich_with_fries.jfif",
+    image: "/images/menu_items/tikka_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2869,7 +2669,7 @@ module.exports=[
     price: 310,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/tikka_sandwich_cheese_with_fries.jfif",
+    image: "/images/menu_items/tikka_sandwich_cheese_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2877,7 +2677,7 @@ module.exports=[
     price: 350,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/zinger_club_sandwich_with_fries.jfif",
+    image: "/images/menu_items/zinger_club_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2885,7 +2685,7 @@ module.exports=[
     price: 410,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/zinger_cheese_club_sandwich_with_fries.jfif",
+    image: "/images/menu_items/zinger_cheese_club_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2893,7 +2693,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/beef_club_sandwich_with_fries.jfif",
+    image: "/images/menu_items/beef_club_sandwich_with_fries.jpg",
     category: "lunch"
   },
   {
@@ -2909,7 +2709,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chatni_roll.jfif",
+    image: "/images/menu_items/chicken_chatni_roll.jpg",
     category: "lunch"
   },
   {
@@ -2917,7 +2717,7 @@ module.exports=[
     price: 180,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chatni_cheese_roll.jfif",
+    image: "/images/menu_items/chicken_chatni_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -2925,7 +2725,7 @@ module.exports=[
     price: 200,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/zinger_roll.jfif",
+    image: "/images/menu_items/zinger_roll.jpg",
     category: "lunch"
   },
   {
@@ -2933,7 +2733,7 @@ module.exports=[
     price: 260,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/zinger_cheese_roll.jfif",
+    image: "/images/menu_items/zinger_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -2941,7 +2741,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/mayo_roll.jfif",
+    image: "/images/menu_items/mayo_roll.jpg",
     category: "lunch"
   },
   {
@@ -2949,7 +2749,7 @@ module.exports=[
     price: 210,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/mayo_cheese_roll.jfif",
+    image: "/images/menu_items/mayo_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -2957,7 +2757,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/malai_roll.jfif",
+    image: "/images/menu_items/malai_roll.jpg",
     category: "lunch"
   },
   {
@@ -2965,7 +2765,7 @@ module.exports=[
     price: 210,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/malai_cheese_roll.jfif",
+    image: "/images/menu_items/malai_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -2973,7 +2773,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_kabab_roll.jfif",
+    image: "/images/menu_items/sada_kabab_roll.jpg",
     category: "lunch"
   },
   {
@@ -2981,7 +2781,7 @@ module.exports=[
     price: 180,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_kabab_cheese_roll.jfif",
+    image: "/images/menu_items/sada_kabab_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -2997,7 +2797,7 @@ module.exports=[
     price: 210,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_kabab_cheese_roll.jfif",
+    image: "/images/menu_items/chicken_kabab_cheese_roll.jpg",
     category: "lunch"
   },
   {
@@ -3005,7 +2805,7 @@ module.exports=[
     price: 70,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_kabab.jfif",
+    image: "/images/menu_items/sada_kabab.jpg",
     category: "lunch"
   },
   {
@@ -3021,7 +2821,7 @@ module.exports=[
     price: 50,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_paratha.jfif",
+    image: "/images/menu_items/sada_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3029,7 +2829,7 @@ module.exports=[
     price: 100,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/aaloo_paratha.jfif",
+    image: "/images/menu_items/aaloo_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3037,7 +2837,7 @@ module.exports=[
     price: 100,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/anda_paratha.jfif",
+    image: "/images/menu_items/anda_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3061,7 +2861,7 @@ module.exports=[
     price: 210,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_cheese_paratha.jfif",
+    image: "/images/menu_items/chicken_cheese_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3069,7 +2869,7 @@ module.exports=[
     price: 110,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_cheese_paratha.jfif",
+    image: "/images/menu_items/sada_cheese_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3085,7 +2885,7 @@ module.exports=[
     price: 210,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_cheese_kabab_paratha.jfif",
+    image: "/images/menu_items/chicken_cheese_kabab_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3093,7 +2893,7 @@ module.exports=[
     price: 120,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_kabab_paratha.jfif",
+    image: "/images/menu_items/sada_kabab_paratha.jpg",
     category: "lunch"
   },
   {
@@ -3101,7 +2901,7 @@ module.exports=[
     price: 50,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/omelet.jfif",
+    image: "/images/menu_items/omelet.jpg",
     category: "lunch"
   },
   {
@@ -3109,7 +2909,7 @@ module.exports=[
     price: 30,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/macaroni_samosa.jfif",
+    image: "/images/menu_items/macaroni_samosa.jpg",
     category: "snacks"
   },
   {
@@ -3117,7 +2917,7 @@ module.exports=[
     price: 30,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/aalo_samosa.jfif",
+    image: "/images/menu_items/aalo_samosa.jpg",
     category: "snacks"
   },
   {
@@ -3125,7 +2925,7 @@ module.exports=[
     price: 20,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/aalo_samosa.jfif",
+    image: "/images/menu_items/aalo_samosa.jpg",
     category: "snacks"
   },
   {
@@ -3133,7 +2933,7 @@ module.exports=[
     price: 40,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/vegetable_roll.jfif",
+    image: "/images/menu_items/vegetable_roll.jpg",
     category: "snacks"
   },
   {
@@ -3141,7 +2941,7 @@ module.exports=[
     price: 70,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fries.jfif",
+    image: "/images/menu_items/fries.jpg",
     category: "snacks"
   },
   {
@@ -3149,7 +2949,7 @@ module.exports=[
     price: 100,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fries.jfif",
+    image: "/images/menu_items/fries.jpg",
     category: "snacks"
   },
   {
@@ -3157,7 +2957,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/fries.jfif",
+    image: "/images/menu_items/fries.jpg",
     category: "snacks"
   },
   {
@@ -3165,7 +2965,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chow_mein.jfif",
+    image: "/images/menu_items/chicken_chow_mein.jpg",
     category: "lunch"
   },
   {
@@ -3181,7 +2981,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/manchurian.jfif",
+    image: "/images/menu_items/manchurian.jpg",
     category: "lunch"
   },
   {
@@ -3189,7 +2989,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/shashlik_rice.jfif",
+    image: "/images/menu_items/shashlik_rice.jpg",
     category: "lunch"
   },
   {
@@ -3197,7 +2997,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/drumstick_rice.jfif",
+    image: "/images/menu_items/drumstick_rice.jpg",
     category: "lunch"
   },
   {
@@ -3205,7 +3005,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/dry_chilli.jfif",
+    image: "/images/menu_items/dry_chilli.jpg",
     category: "lunch"
   },
   {
@@ -3213,7 +3013,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/singaporean_rice.jfif",
+    image: "/images/menu_items/singaporean_rice.jpg",
     category: "lunch"
   },
   {
@@ -3237,7 +3037,7 @@ module.exports=[
     price: 350,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/malai_pasta.jfif",
+    image: "/images/menu_items/malai_pasta.jpg",
     category: "lunch"
   },
   {
@@ -3341,7 +3141,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sada_channa_curry.jfif",
+    image: "/images/menu_items/sada_channa_curry.jpg",
     category: "lunch"
   },
   {
@@ -3365,7 +3165,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/murgh_channa_curry.jfif",
+    image: "/images/menu_items/murgh_channa_curry.jpg",
     category: "lunch"
   },
   {
@@ -3397,7 +3197,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sabzi_sada_curry.jfif",
+    image: "/images/menu_items/sabzi_sada_curry.jpg",
     category: "lunch"
   },
   {
@@ -3405,7 +3205,7 @@ module.exports=[
     price: 170,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sabzi_fry_curry.jfif",
+    image: "/images/menu_items/sabzi_fry_curry.jpg",
     category: "lunch"
   },
   {
@@ -3421,7 +3221,7 @@ module.exports=[
     price: 240,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/qeema_fry_curry.jfif",
+    image: "/images/menu_items/qeema_fry_curry.jpg",
     category: "lunch"
   },
   {
@@ -3429,7 +3229,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/karee_pakora_curry.jfif",
+    image: "/images/menu_items/karee_pakora_curry.jpg",
     category: "lunch"
   },
   {
@@ -3437,7 +3237,7 @@ module.exports=[
     price: 300,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/sabzi_gosht_curry.jfif",
+    image: "/images/menu_items/sabzi_gosht_curry.jpg",
     category: "lunch"
   },
   {
@@ -3469,7 +3269,7 @@ module.exports=[
     price: 170,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/matar_masala_curry.jfif",
+    image: "/images/menu_items/matar_masala_curry.jpg",
     category: "lunch"
   },
   {
@@ -3477,7 +3277,7 @@ module.exports=[
     price: 150,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/daal_palak_curry.jfif",
+    image: "/images/menu_items/daal_palak_curry.jpg",
     category: "lunch"
   },
   {
@@ -3493,7 +3293,7 @@ module.exports=[
     price: 20,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/naan.jfif",
+    image: "/images/menu_items/naan.jpg",
     category: "lunch"
   },
   {
@@ -3525,7 +3325,7 @@ module.exports=[
     price: 50,
     canteenName: "Neelum Canteen",
     available: true,
-    image: "/images/menu_items/green_tea.jfif",
+    image: "/images/menu_items/green_tea.jpg",
     category: "drinks"
   },
   {
@@ -3557,7 +3357,7 @@ module.exports=[
     price: 180,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/hot_&_sour_soup.jfif",
+    image: "/images/menu_items/hot_&_sour_soup.jpg",
     category: "snacks"
   },
   {
@@ -3565,7 +3365,7 @@ module.exports=[
     price: 250,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/masala_rice.jfif",
+    image: "/images/menu_items/masala_rice.jpg",
     category: "lunch"
   },
   {
@@ -3581,7 +3381,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/singaporean_rice.jfif",
+    image: "/images/menu_items/singaporean_rice.jpg",
     category: "lunch"
   },
   {
@@ -3589,7 +3389,7 @@ module.exports=[
     price: 250,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/roasted_garlic_rice.jfif",
+    image: "/images/menu_items/roasted_garlic_rice.jpg",
     category: "lunch"
   },
   {
@@ -3597,7 +3397,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chili_dry_with_rice.jfif",
+    image: "/images/menu_items/chicken_chili_dry_with_rice.jpg",
     category: "lunch"
   },
   {
@@ -3613,7 +3413,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/dragon_chicken_with_rice.jfif",
+    image: "/images/menu_items/dragon_chicken_with_rice.jpg",
     category: "lunch"
   },
   {
@@ -3621,7 +3421,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chili_gravy_with_rice.jfif",
+    image: "/images/menu_items/chicken_chili_gravy_with_rice.jpg",
     category: "lunch"
   },
   {
@@ -3629,7 +3429,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/red_manchurian_with_rice.jfif",
+    image: "/images/menu_items/red_manchurian_with_rice.jpg",
     category: "lunch"
   },
   {
@@ -3645,7 +3445,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/schezwan_chicken_with_rice.jfif",
+    image: "/images/menu_items/schezwan_chicken_with_rice.jpg",
     category: "lunch"
   },
   {
@@ -3653,7 +3453,7 @@ module.exports=[
     price: 250,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/zinger_burger.jfif",
+    image: "/images/menu_items/zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -3661,7 +3461,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/zinger_burger_with_cheese.jfif",
+    image: "/images/menu_items/zinger_burger_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3677,7 +3477,7 @@ module.exports=[
     price: 230,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/chicken_sandwich.jfif",
+    image: "/images/menu_items/chicken_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3685,7 +3485,7 @@ module.exports=[
     price: 250,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/club_sandwich.jfif",
+    image: "/images/menu_items/club_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3693,7 +3493,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/crispy_sandwich.jfif",
+    image: "/images/menu_items/crispy_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3701,7 +3501,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/veg_pasta.jfif",
+    image: "/images/menu_items/veg_pasta.jpg",
     category: "lunch"
   },
   {
@@ -3717,7 +3517,7 @@ module.exports=[
     price: 400,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/creamy_cheese_pasta.jfif",
+    image: "/images/menu_items/creamy_cheese_pasta.jpg",
     category: "lunch"
   },
   {
@@ -3725,7 +3525,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/chicken_chowmein.jfif",
+    image: "/images/menu_items/chicken_chowmein.jpg",
     category: "lunch"
   },
   {
@@ -3733,7 +3533,7 @@ module.exports=[
     price: 250,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/veg_chowmein.jfif",
+    image: "/images/menu_items/veg_chowmein.jpg",
     category: "lunch"
   },
   {
@@ -3741,7 +3541,7 @@ module.exports=[
     price: 300,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/garlic_chowmein.jfif",
+    image: "/images/menu_items/garlic_chowmein.jpg",
     category: "lunch"
   },
   {
@@ -3749,7 +3549,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/bbq_chowmein.jfif",
+    image: "/images/menu_items/bbq_chowmein.jpg",
     category: "lunch"
   },
   {
@@ -3757,7 +3557,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/schezwan_chowmein.jfif",
+    image: "/images/menu_items/schezwan_chowmein.jpg",
     category: "lunch"
   },
   {
@@ -3765,7 +3565,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/garlic_thickcut.jfif",
+    image: "/images/menu_items/garlic_thickcut.jpg",
     category: "lunch"
   },
   {
@@ -3773,7 +3573,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/mangolian_thickcut.jfif",
+    image: "/images/menu_items/mangolian_thickcut.jpg",
     category: "lunch"
   },
   {
@@ -3781,7 +3581,7 @@ module.exports=[
     price: 350,
     canteenName: "Pharmacy Canteen",
     available: true,
-    image: "/images/menu_items/bbq_thickcut.jfif",
+    image: "/images/menu_items/bbq_thickcut.jpg",
     category: "lunch"
   },
   {
@@ -3789,7 +3589,7 @@ module.exports=[
     price: 300,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/zinger_burger.jfif",
+    image: "/images/menu_items/zinger_burger.jpg",
     category: "lunch"
   },
   {
@@ -3797,7 +3597,7 @@ module.exports=[
     price: 360,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/zinger_burger_with_cheese.jfif",
+    image: "/images/menu_items/zinger_burger_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3805,7 +3605,7 @@ module.exports=[
     price: 200,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/chicken_burger.jfif",
+    image: "/images/menu_items/chicken_burger.jpg",
     category: "lunch"
   },
   {
@@ -3813,7 +3613,7 @@ module.exports=[
     price: 250,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/chicken_burger_with_cheese.jfif",
+    image: "/images/menu_items/chicken_burger_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3837,7 +3637,7 @@ module.exports=[
     price: 300,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/club_sandwich.jfif",
+    image: "/images/menu_items/club_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3845,7 +3645,7 @@ module.exports=[
     price: 360,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/club_sandwich_with_cheese.jfif",
+    image: "/images/menu_items/club_sandwich_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3853,7 +3653,7 @@ module.exports=[
     price: 300,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/chicken_sandwich.jfif",
+    image: "/images/menu_items/chicken_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3861,7 +3661,7 @@ module.exports=[
     price: 360,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/chicken_sandwich_with_cheese.jfif",
+    image: "/images/menu_items/chicken_sandwich_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3869,7 +3669,7 @@ module.exports=[
     price: 300,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/bbq_sandwich.jfif",
+    image: "/images/menu_items/bbq_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3877,7 +3677,7 @@ module.exports=[
     price: 360,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/bbq_sandwich_with_cheese.jfif",
+    image: "/images/menu_items/bbq_sandwich_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3885,7 +3685,7 @@ module.exports=[
     price: 300,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/crispy_sandwich.jfif",
+    image: "/images/menu_items/crispy_sandwich.jpg",
     category: "lunch"
   },
   {
@@ -3893,7 +3693,7 @@ module.exports=[
     price: 360,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/crispy_sandwich_with_cheese.jfif",
+    image: "/images/menu_items/crispy_sandwich_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3901,7 +3701,7 @@ module.exports=[
     price: 220,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/zinger_roll.jfif",
+    image: "/images/menu_items/zinger_roll.jpg",
     category: "lunch"
   },
   {
@@ -3909,7 +3709,7 @@ module.exports=[
     price: 270,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/zinger_roll_with_cheese.jfif",
+    image: "/images/menu_items/zinger_roll_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3941,7 +3741,7 @@ module.exports=[
     price: 120,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/chicken_roll.jfif",
+    image: "/images/menu_items/chicken_roll.jpg",
     category: "lunch"
   },
   {
@@ -3949,7 +3749,7 @@ module.exports=[
     price: 170,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/chicken_roll_with_cheese.jfif",
+    image: "/images/menu_items/chicken_roll_with_cheese.jpg",
     category: "lunch"
   },
   {
@@ -3989,7 +3789,7 @@ module.exports=[
     price: 350,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "/images/menu_items/Chicken_Shashlik_Fried_Rice.jfif",
+    image: "/images/menu_items/Chicken_Shashlik_Fried_Rice.jpg",
     category: "lunch",
   },
   {
@@ -4157,7 +3957,7 @@ module.exports=[
     price: 180,
     canteenName: "Safeer Canteen",
     available: true,
-    image: "",
+    image: "/images/menu_items/Chatni_Roll.jfif",
     category: "lunch",
   },
   {
@@ -4200,7 +4000,7 @@ module.exports=[
     image: "/images/menu_items/images/Ande_wala_Burger.jfif",
     category: "lunch",
   },
-  //Cafe Ashna Raheel
+ //Cafe Ashna Raheel
   {
     name: "Lemon fries",
     price: 70,
@@ -7967,3 +7767,6 @@ module.exports=[
 ];
 
   
+
+
+ 

@@ -1,4 +1,7 @@
 import { addToCart } from "../Cart/addToCart.js";
+
+const BACKEND_BASE_URL = "http://localhost:5000"; // Define the base URL once
+
 // Read params from URL
 const params = new URLSearchParams(window.location.search);
 const ITEM = {
@@ -19,8 +22,17 @@ let allItems = [];
   const foodHeading = document.getElementById("foodHeading");
   const foodLocation = document.getElementById("foodLocation");
 
+  let canteenImageUrl = ITEM.image;
+  if (
+    canteenImageUrl &&
+    !canteenImageUrl.startsWith("http") &&
+    !canteenImageUrl.startsWith("data:")
+  ) {
+    canteenImageUrl = `${BACKEND_BASE_URL}/${canteenImageUrl}`; 
+  }
+
   if (foodImage) {
-    foodImage.src = ITEM.image;
+    foodImage.src = canteenImageUrl; // <-- Use the fully constructed URL
     foodImage.alt = ITEM.canteen;
   }
   if (foodHeading && foodLocation) {
@@ -149,6 +161,7 @@ function renderPagination(totalItems, currentPage) {
   // Prev button
   const prevBtn = document.createElement("button");
   prevBtn.textContent = "<";
+  prevBtn.classList.add("pagination-btn");
   prevBtn.disabled = currentPage === 1;
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) {
@@ -171,6 +184,7 @@ function renderPagination(totalItems, currentPage) {
   // Next button
   const nextBtn = document.createElement("button");
   nextBtn.textContent = ">";
+  nextBtn.classList.add("pagination-btn");
   nextBtn.disabled = currentPage === totalPages;
   nextBtn.addEventListener("click", () => {
     if (currentPage < totalPages) {

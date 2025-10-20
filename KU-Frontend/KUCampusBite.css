@@ -619,6 +619,9 @@ footer {
   footer {
     padding: 3.5rem 4rem 2rem 4rem;
   }
+  /* .img-container::after {
+    height: 85%;
+  } */
 }
 
 /* Main content sections (brand, links, contact) */
@@ -756,7 +759,7 @@ hr {
   }
   .bg-img {
     width: 100%;
-    height: 590px;
+    height: 665px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -809,10 +812,10 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fddddb;
+    background: transparent;
     color: var(--main-primary-color);
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   }
   .flip-back img {
     width: 250px;
@@ -849,7 +852,7 @@ hr {
     padding: 4px 12px;
     border-radius: 20px;
     background: var(--color-dark-red);
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
     font-weight: 600;
     margin-top: 0px;
@@ -1085,7 +1088,7 @@ hr {
   }
   .pagination-btn,
   .page-number {
-    width: 90%;
+    width: 12%;
   }
   .page-numbers {
     gap: 6px;
@@ -1511,7 +1514,7 @@ h2 {
 @media (max-width: 768px) {
   .checkout-cart-container {
     flex-direction: column;
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
   }
   .form-row {
     flex-direction: column;
@@ -1557,7 +1560,7 @@ h2 {
   overflow: hidden;
   height: auto;
   min-height: 70vh;
-  max-height: 85vh;
+  max-height: 115vh;
 }
 
 .item-grid {
@@ -1570,8 +1573,8 @@ h2 {
 
 .media {
   position: relative;
-  min-height: 60vh;
-  max-height: 75vh;
+  min-height: 50vh;
+  max-height: 60vh;
   /* background: #fdfdff; */
   display: flex;
   align-items: center;
@@ -2185,9 +2188,9 @@ textarea {
   }
 
   .food-section {
-    width: 98%;
-    margin: 5px 0px;
-    padding: 5px;
+           width: 76%;
+        margin: 5px auto;
+        padding: 5px;
   }
 
   .food-grid {
@@ -2554,6 +2557,9 @@ textarea {
     font-size: 20px;
     margin-bottom: 10px;
   }
+  .filter-buttons{
+    gap:22px
+  }
 
   header h1 {
     display: none;
@@ -2642,6 +2648,7 @@ textarea {
 
   .media h3 {
     font-size: 10px;
+
   }
 
   .media h2 {
@@ -2679,6 +2686,13 @@ textarea {
     font-size: 12px;
     padding-left: 0;
     padding-right: 0;
+    width: 12%;
+  }
+   .canteen-media h2{
+   font-size: 2.5rem;
+  }
+  .canteen-media h3{
+    top: 60%;
   }
 }
 
@@ -2759,8 +2773,130 @@ textarea {
   pointer-events: auto;
 }
 
+/* SCHEDULE FEATURE CSS */
+/* Style for the Pre-Order toggle button */
+#preorderToggle {
+    /* Layout and Spacing */
+    display: block; /* Makes it take its own line */
+    width: 100%; /* Make it full width like the add to cart button */
+    max-width: 300px; /* Adjust this to match your "Add to Cart" button width */
+    margin-top: 10px; /* Space it below the "Add to Cart" button */
+    padding: 12px 20px;
+
+    /* Appearance */
+    border: none;
+    border-radius: 50px; /* Highly rounded corners */
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    
+    /* Colors (Matching the general theme but slightly toned down) */
+    background-color: #f7e0e4; /* A lighter shade of the main theme color */
+    color: #ad6074; /* Use the primary red/pink color for text */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover and Active states for better interaction */
+#preorderToggle:hover {
+    background-color: #fce7eb; /* Slightly lighter on hover */
+}
+
+#preorderToggle:active {
+    background-color: #eccfd6; /* Slightly darker on press */
+}
+
+/* If you want it to be the SAME color as Add to Cart, use this: */
+/*
+#preorderToggle {
+    background-color: #c0392b; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(192, 57, 43, 0.2);
+}
+#preorderToggle:hover {
+    background-color: #e74c3c;
+}
+*/
 
 
 
+/* ======================================= */
+/* 1. Time Selection Area Container */
+/* ======================================= */
 
+#timeSelectionArea {
+    /* Set the container size and align its contents */
+    width: 100%;
+    max-width: 300px; /* Match the max-width of the button above it */
+    margin: 10px 0 15px 0; /* Vertical spacing */
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* Use flexbox to align the button, input, and message */
+    display: flex; 
+    flex-wrap: wrap; /* Allows the message to wrap below the button/input */
+    align-items: center; 
+    gap: 10px; /* Space between button and input */
+}
 
+/* ======================================= */
+/* 2. "Select Time" Button (#showTimePicker) */
+/* ======================================= */
+
+#showTimePicker {
+    /* Style the button */
+    padding: 8px 12px;
+    border: 1px solid #ad6074; /* Use a theme color for a defined border */
+    border-radius: 6px;
+    background-color: #fce7eb; /* Light pink background */
+    color: #ad6074;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; 
+    transition: background-color 0.2s;
+}
+
+#showTimePicker:hover {
+    background-color: #f7e0e4;
+}
+
+/* ======================================= */
+/* 3. Time Input Field (#deliveryTimeInput) */
+/* ======================================= */
+
+#deliveryTimeInput {
+    /* Make the input look clean and integrate with the button */
+    padding: 8px 12px;
+    /* Remove the default border since the button next to it has one */
+    border: 1px solid #ccc; 
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    /* Optional: Sets a max size for the input field */
+    max-width: 140px; 
+    
+    /* Note: The appearance of the clock icon is controlled by the browser, 
+       but the overall style will be applied here. */
+}
+
+#deliveryTimeInput:focus {
+    /* Highlight on focus/click */
+    border-color: #ad6074;
+    outline: none;
+}
+
+/* ======================================= */
+/* 4. Required Time Message (#selectedTimeDisplay) */
+/* ======================================= */
+
+#selectedTimeDisplay {
+    /* Ensure the message breaks to a new line */
+    flex-basis: 100%; 
+    margin-top: 5px; 
+    font-weight: normal; 
+    font-size: 14px;
+    color: green; 
+}

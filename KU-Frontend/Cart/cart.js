@@ -19,6 +19,51 @@ function getAuthHeaders() {
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
+function showToast(message, type) {
+  // You MUST have a <div id="toast-container"></div> in your HTML body
+  const container = document.getElementById("toast-container");
+  if (!container) {
+    console.error(
+      "Toast container not found. Add <div id='toast-container'></div> to your HTML."
+    );
+    return;
+  }
+
+  const toast = document.createElement("div");
+  let iconHtml;
+  let toastClass;
+
+  if (type === "success") {
+    iconHtml = "&#10003;";
+    toastClass = "toast--success";
+  } else if (type === "error") {
+    iconHtml = "&#10005;";
+    toastClass = "toast--error";
+  } else {
+    iconHtml = "i";
+    toastClass = "toast--info";
+  }
+
+  toast.className = `toast ${toastClass} show`;
+  toast.innerHTML = `
+        <div class="toast__icon">${iconHtml}</div>
+        <div class="toast__text">${message}</div>
+    `;
+
+  container.appendChild(toast);
+
+  const DURATION = 4000;
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+    toast.classList.add("hide");
+
+    toast.addEventListener("transitionend", () => {
+      toast.remove();
+    });
+  }, DURATION);
+}
+
 async function fetchCart() {
   try {
     const { type, id } = getIdentifier();
@@ -36,6 +81,10 @@ async function fetchCart() {
     } else {
       console.log("No items in cart.");
       displayCart([]);
+
+      if (data.cart.length === 0) {
+        showToast("Your cart is empty.", "info");
+      }
     }
   } catch (error) {
     console.error("Error fetching cart:", error);
@@ -91,7 +140,7 @@ export async function clearCart() {
   }
 }
 
-const BACKEND_BASE_URL = "http://localhost:5000"; 
+const BACKEND_BASE_URL = "http://localhost:5000";
 
 function displayCart(cartItems = []) {
   const tbody = document.getElementById("cart-table-body");
@@ -107,12 +156,15 @@ function displayCart(cartItems = []) {
     const itemTotal = item.price * item.quantity;
     subtotal += itemTotal;
 
-        const relativeImagePath = item.menuItemId?.image || item.menuItemId?.img || '/images/placeholder.png'; 
+    const relativeImagePath =
+      item.menuItemId?.image ||
+      item.menuItemId?.img ||
+      "/images/placeholder.png";
 
-        let imageSrc = relativeImagePath;
-        if (imageSrc.startsWith('/')) {
-            imageSrc = `${BACKEND_BASE_URL}${imageSrc}`;
-        }
+    let imageSrc = relativeImagePath;
+    if (imageSrc.startsWith("/")) {
+      imageSrc = `${BACKEND_BASE_URL}${imageSrc}`;
+    }
 
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -144,7 +196,6 @@ function isLoggedIn() {
   return !!(token && user && user._id);
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   fetchCart();
 
@@ -162,7 +213,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const shopBtn = document.getElementById("shop-btn");
   if (shopBtn)
-    shopBtn.addEventListener("click", () => (window.location.href = "../AllMenuPage/menu.html"));
+    shopBtn.addEventListener(
+      "click",
+      () => (window.location.href = "../AllMenuPage/menu.html")
+    );
 
   const clearBtn = document.getElementById("clear-btn");
   if (clearBtn) clearBtn.addEventListener("click", clearCart);
@@ -170,11 +224,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkoutBtn = document.getElementById("checkout-btn");
   if (checkoutBtn) {
     checkoutBtn.addEventListener("click", () => {
+      const cartTableBody = document.getElementById("cart-table-body");
+      if (cartTableBody && cartTableBody.children.length === 0) {
+        showToast("Your cart is empty. Please add items before checking out.","info");
+        return;
+      }
+
       if (isLoggedIn()) {
         window.location.href = "../Checkout/checkout.html";
       } else {
-        alert("Please log in first to proceed to checkout.");
-        window.location.href = "../Authentication/login.html";
+        showToast("Please log in first to proceed to checkout.", "error");
+        setTimeout(() => {
+          window.location.href = "../Authentication/login.html";
+        }, 1500);
       }
     });
   }

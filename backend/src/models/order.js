@@ -56,5 +56,14 @@ const orderSchema = new mongoose.Schema({
     type: String,
     required: [true, "Delivery address must be provided"],
   },
+    orderType: {
+    type: String,
+    enum: ["standard", "preorder"],
+    default: "standard",
+  },
+  deliveryTime: {
+    type: String,
+    default: "ASAP",
+  },
 });
 module.exports = mongoose.model("Order", orderSchema);

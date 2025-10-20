@@ -83,47 +83,22 @@
 
           </div>
         </div>
-  </div>
-  </section>
 
-  <section class="review-wrap">
-    <button class="btn review-toggle" id="toggleReview" aria-expanded="false" aria-controls="reviewForm">
-      <span class="span">Reviews</span>
-      <span class="chev" id="chev">▾</span>
-    </button>
-    <form class="review-form" id="reviewForm">
-      <div id="reviewsList"></div>
-      <button class="btn-form" id="reviewBtn"><i class="fa-solid fa-pen-to-square"
-          style="color:white; font-size:24px;"></i> Write a Review</button>
+        <!-- ✅ PRE-ORDER SECTION -->
+        <div class="preorder-container">
+          <div class="container">
+            <h2>Choose Delivery Time ⏰</h2>
+            <label for="deliveryTimeInput">Select Time (9:00 AM – 6:00 PM):</label>
+            <input type="time" id="deliveryTimeInput" name="deliveryTime" min="09:00" max="18:00" required>
 
-    </form>
-  </section>
-  </article>
-  <div class="review-container">
-    <div class="field item-inline">
-      <label>Rating</label>
-      <div class="item-stars" id="stars" aria-label="Star rating">
-        <span class="star" data-v="1">★</span>
-        <span class="star" data-v="2">★</span>
-        <span class="star" data-v="3">★</span>
-        <span class="star" data-v="4">★</span>
-        <span class="star" data-v="5">★</span>
-      </div>
-    </div>
-    <div class="field">
-      <label for="reviewer">Your name</label>
-      <input type="text" id="reviewer" />
-    </div>
-    <div class="field">
-      <label for="reviewText">Your review</label>
-      <textarea id="reviewText" placeholder="Share your thoughts...">
-         </textarea>
-    </div>
-    <div class="inline">
-      <button type="button" class="btn-form" id="submitReview">Submit Review</button>
-      <button type="button" class="btn-form" id="cancelReview">Cancel</button>
-    </div>
+            <div id="selectedTimeDisplay">Time is required for Pre-Order.</div>
+            <button id="showTimePicker">Set Time</button>
+          </div>
+        </div>
+      </section>
+    </article>
   </div>
+
   <section class="food-section">
     <h1>Recommended Items</h1>
     <div class="food-slider">
@@ -161,13 +136,13 @@
 
 
   <script type="module" src="itemDetail.js"></script>
-    <script type="module" src="logout.js"></script>
+  <script type="module" src="logout.js"></script>
 
 
-  <!-- Toast Notification -->
-<div id="toast-notification" class="toast hidden">
-  <span class="toast-message">Item added to cart!</span>
-</div>
+  <!-- Toast Notification
+  <div id="toast-notification" class="toast hidden">
+    <span class="toast-message">Item added to cart!</span>
+  </div> -->
 
 </body>
 

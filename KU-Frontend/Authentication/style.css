@@ -281,3 +281,79 @@ html {
 
   /* LOGIN-SIGNUP-PAGE ENDS */
 }
+
+/* TOAST NOTIFICATION CSS */
+
+#toast-container {
+    position: fixed; 
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1000; 
+    width: 90%; 
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callout {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 8px; 
+    color: white; 
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+    width: 100%; 
+}
+
+/* Success Callout (Green) */
+.callout--success {
+    background-color: #4CAF50; 
+}
+
+.callout--success .callout__icon {
+    background-color: #66BB6A; 
+}
+
+/* --- ERROR STYLES (The Missing Piece) --- */
+
+/* 🔴 Style for Error Callouts (Red background) */
+.callout--error {
+    /* Main red background color */
+    background-color: #F44336; 
+}
+
+/* 🔴 Style for the Error Icon circle */
+.callout--error .callout__icon {
+    /* Lighter red circle background */
+    background-color: #E57373; 
+}
+
+/* Style for the text content and icon base */
+.callout__text {
+    flex-grow: 1; 
+    padding-left: 15px; 
+    line-height: 1.5; 
+}
+
+.callout__icon {
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; /* Icon color */
+}
+
+.callout__icon i {
+    color: white; 
+    font-style: normal; 
+    font-size: 18px; 
+    font-weight: bold;
+    line-height: 1; 
+}
