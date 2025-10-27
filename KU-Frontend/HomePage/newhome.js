@@ -1,3 +1,4 @@
+const BACKEND_BASE_URL ="https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app"; // 👈 Define your backend URL
 import { addToCart } from "../Cart/addToCart.js";
 
 export function generateFoodCards(containerId, items, limit = 20) {
@@ -7,7 +8,6 @@ export function generateFoodCards(containerId, items, limit = 20) {
   container.innerHTML = "";
   const list = limit ? items.slice(0, limit) : items;
 
-    const BACKEND_BASE_URL ="https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app"; // 👈 Define your backend URL
 
 
   list.forEach(item => {
