@@ -17,7 +17,9 @@ const dashboardReportRouter = require("./src/routes/dashboardReportRouter");
 
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin:["https://kubite.netlify.app"]
+}))
 
 app.use('/images', express.static(path.join(__dirname, '..', 'KU-Frontend', 'images')));
 
