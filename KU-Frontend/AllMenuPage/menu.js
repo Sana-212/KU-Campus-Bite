@@ -1,6 +1,6 @@
 import { addToCart } from "../Cart/addToCart.js";
 
-  const BACKEND_BASE_URL = "http://localhost:5000";
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
 
 let allItems = [];
 let currentPage = 1;
@@ -71,7 +71,7 @@ function generateFoodCards(containerId, items, limit = 1005) {
 
 async function fetchAllMenuItems() {
   try {
-    const res = await fetch(`http://localhost:5000/api/menu?limit=10000`);
+    const res = await fetch(`${BACKEND_BASE_URL}/api/menu?limit=10000`);
     const data = await res.json();
 
     if (data.success && data.menuItems.length > 0) {

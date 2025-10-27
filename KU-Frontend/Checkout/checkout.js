@@ -4,7 +4,7 @@ console.log(
   localStorage.getItem("deliveryTime")
 );
 
-const BACKEND_BASE_URL = "http://localhost:5000";
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
 
 async function loadCart() {
   const cartItemsContainer = document.getElementById("cart-items");
@@ -21,7 +21,7 @@ async function loadCart() {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/cart?userId=${user._id}`,
+      `${BACKEND_BASE_URL}/api/cart?userId=${user._id}`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -197,7 +197,7 @@ document
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/cart?userId=${user._id}`,
+        `${BACKEND_BASE_URL}/api/cart?userId=${user._id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -242,7 +242,7 @@ document
 
       console.log("📦 Order Payload:", orderData);
 
-      const orderResponse = await fetch("http://localhost:5000/api/orders", {
+      const orderResponse = await fetch(`${BACKEND_BASE_URL}/api/orders`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,6 +1,8 @@
 import { addToCart } from "../Cart/addToCart.js";
 import { generateFoodCards } from "./newhome.js";
 
+ const BACKEND_BASE_URL ="https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/";
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.querySelector(".search-input");
   const searchBtn = document.querySelector(".search-btn");
@@ -74,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadMenu() {
     try {
       const url = currentQuery
-        ? `http://localhost:5000/api/menu?search=${currentQuery}&page=${currentPage}&limit=${limit}`
-        : `http://localhost:5000/api/menu`;
+        ? `${BACKEND_BASE_URL}/api/menu?search=${currentQuery}&page=${currentPage}&limit=${limit}`
+        : `${BACKEND_BASE_URL}/api/menu`;
 
       const res = await fetch(url);
       const data = await res.json();

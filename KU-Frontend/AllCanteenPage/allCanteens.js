@@ -1,10 +1,12 @@
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
+
 let canteens = [];
 let currentPage = 1;
 const itemsPerPage = 10;
 
 async function fetchCanteens() {
   try {
-    const res = await fetch("http://localhost:5000/api/canteen");
+    const res = await fetch(`${BACKEND_BASE_URL}/api/canteen`);
     const data = await res.json();
 
     if (data.success) {

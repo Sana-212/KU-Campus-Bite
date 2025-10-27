@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:5000/api/cart";
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
+
+const API_URL = `${BACKEND_BASE_URL}/api/cart`;
 
 function getIdentifier() {
   const user = JSON.parse(localStorage.getItem("user"));

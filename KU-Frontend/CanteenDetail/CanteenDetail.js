@@ -1,6 +1,6 @@
 import { addToCart } from "../Cart/addToCart.js";
 
-const BACKEND_BASE_URL = "http://localhost:5000"; // Define the base URL once
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
 
 // Read params from URL
 const params = new URLSearchParams(window.location.search);
@@ -44,7 +44,7 @@ let allItems = [];
 // Fetch menu items for a given canteen
 async function fetchFoodByCanteen(canteenId) {
   try {
-    const res = await fetch(`http://localhost:5000/api/menu?limit=10000`);
+    const res = await fetch(`${BACKEND_BASE_URL}/api/menu?limit=10000`);
     const data = await res.json();
 
     console.log("API data:", data); // debug log
@@ -75,8 +75,6 @@ function generateFoodCards(containerId, items, page = 1) {
   if (!container) return;
 
   container.innerHTML = "";
-
-  const BACKEND_BASE_URL = "http://localhost:5000"; // 👈 Define your backend URL
 
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;

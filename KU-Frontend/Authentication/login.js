@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, DURATION);
   }
 
-  const BASE_URL = "http://localhost:5000";
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
 
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const response = await fetch(`${BASE_URL}/api/auth/login`, {
+      const response = await fetch(`${BACKEND_BASE_URL}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password, guestId }),

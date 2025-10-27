@@ -1,3 +1,5 @@
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
+
 function getIdentifier() {
   const user = JSON.parse(localStorage.getItem("user"));
   if (user && user._id) {
@@ -70,7 +72,7 @@ async function fetchCart() {
     const headers = { ...getAuthHeaders() };
 
     const response = await fetch(
-      `http://localhost:5000/api/cart?${type}Id=${id}`,
+      `${BACKEND_BASE_URL}/api/cart?${type}Id=${id}`,
       { headers }
     );
 
@@ -99,7 +101,7 @@ async function updateCartItem(itemId, action) {
       ...getAuthHeaders(),
     };
 
-    const response = await fetch(`http://localhost:5000/api/cart/update`, {
+    const response = await fetch(`${BACKEND_BASE_URL}/api/cart/update`, {
       method: "PATCH",
       headers,
       body: JSON.stringify({ [`${type}Id`]: id, itemId, action }),
@@ -122,7 +124,7 @@ export async function clearCart() {
     const headers = { ...getAuthHeaders() };
 
     const response = await fetch(
-      `http://localhost:5000/api/cart/clear?${type}Id=${id}`,
+      `${BACKEND_BASE_URL}/api/cart/clear?${type}Id=${id}`,
       {
         method: "DELETE",
         headers,
@@ -139,8 +141,6 @@ export async function clearCart() {
     console.error("Error clearing cart:", error);
   }
 }
-
-const BACKEND_BASE_URL = "http://localhost:5000";
 
 function displayCart(cartItems = []) {
   const tbody = document.getElementById("cart-table-body");

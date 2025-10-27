@@ -1,47 +1,4 @@
-// // ---------------- Go Back ----------------
-// function goBack() {
-//   window.history.back();
-// }
-
-// // ---------------- Admin Name ----------------
-// function getAdminName() {
-//   return "Admin User"; // fixed, no localStorage
-// }
-
-// async function updateAdminName(token) {
-//   const nameEl = document.getElementById("adminName");
-//   if (!nameEl) return;
-
-//   try {
-//     const res = await fetch("http://localhost:5000/api/auth/me", {
-//       headers: { Authorization: `Bearer ${token}` }
-//     });
-//     const data = await res.json();
-
-//     nameEl.textContent = data.success ? data.user.name : "Admin";
-//   } catch (err) {
-//     console.error("Error fetching user profile", err);
-//     nameEl.textContent = "Admin";
-//   }
-// }
-
-// // ---------------- Fetch Dashboard Data ----------------
-// async function fetchDashboardData() {
-//   try {
-//     const res = await fetch("http://localhost:5000/api/dashboard", {
-//       method: "GET",
-//       headers: { "Content-Type": "application/json" }
-//     });
-
-//     const data = await res.json();
-//     return data.success ? data.finalData : null;
-//   } catch (err) {
-//     console.error("Fetch Dashboard Error:", err);
-//     return null;
-//   }
-// }
-
-
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
 
 function getToken() {
   const token = localStorage.getItem("token");
@@ -54,7 +11,7 @@ async function updateAdminName() {
   if (!nameEl || !token) return;
 
   try {
-    const res = await fetch("http://localhost:5000/api/auth/me", {
+    const res = await fetch(`${BACKEND_BASE_URL}/api/auth/me`, {
       headers: { Authorization: `Bearer ${token}` }
     });
 
@@ -80,7 +37,7 @@ async function fetchDashboardData() {
  // if (!token) return null;
 
   try {
-    const res = await fetch("http://localhost:5000/api/dashboard", {
+    const res = await fetch(`${BACKEND_BASE_URL}/api/dashboard`, {
       method: "GET",
       headers: { 
         "Content-Type": "application/json",
