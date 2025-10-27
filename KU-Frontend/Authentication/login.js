@@ -1,9 +1,11 @@
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app"
+
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.querySelector("form");
   const rememberCheckbox = document.querySelector("#remember");
   const emailInput = document.querySelector("input[type='email']");
   const passwordInput = document.querySelector("input[type='password']");
-
+  
   const savedEmail = localStorage.getItem("rememberedEmail");
   if (savedEmail) {
     emailInput.value = savedEmail;
@@ -64,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, DURATION);
   }
 
-const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
 
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();

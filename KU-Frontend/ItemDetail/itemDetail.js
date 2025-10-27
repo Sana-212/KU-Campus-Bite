@@ -1,6 +1,6 @@
 import { addToCart } from "../Cart/addToCart.js";
 
- const BACKEND_BASE_URL ="https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"; // Define the base URL once
+ const BACKEND_BASE_URL ="https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app"; // Define the base URL once
 
 const $ = (id) => document.getElementById(id);
 

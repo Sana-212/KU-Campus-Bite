@@ -1,6 +1,6 @@
 import { addToCart } from "../Cart/addToCart.js";
 
-const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app"
 
 // Read params from URL
 const params = new URLSearchParams(window.location.search);

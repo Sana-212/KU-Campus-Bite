@@ -4,7 +4,7 @@ console.log(
   localStorage.getItem("deliveryTime")
 );
 
-const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app/"
+const BACKEND_BASE_URL = "https://ku-campus-bite-i82kfe4eb-sanas-projects-0847f4e8.vercel.app"
 
 async function loadCart() {
   const cartItemsContainer = document.getElementById("cart-items");
