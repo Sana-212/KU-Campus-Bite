@@ -1110,20 +1110,142 @@ hr {
   margin: 70px auto 0 auto;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+/* Tablets and small laptops */
+@media (max-width: 992px) {
   .cart-container {
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    gap: 25px;
   }
+
   .cart-items {
-    min-width: unset;
+    width: 95%;
+    min-width: 700px; /* prevents table from squishing */
+    overflow-x: auto;
+  }
+
+  .order-summary {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+/* Smartphones and smaller tablets */
+@media (max-width: 768px) {
+  .cart-container {
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  .cart-items {
+    width: 100%;
+    min-width: 100%;
+    padding: 18px;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  .cart-items table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .cart-item-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  img.food-image {
+    width: 65px;
+    height: 65px;
+  }
+
+  td, th {
+    padding: 10px 5px;
+  }
+
+  .order-summary {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14.5px;
+  }
+}
+
+/* Mobile view layout for cart items */
+@media (max-width: 480px) {
+  /* Simplify table to block view for small screens */
+  .cart-items table,
+  .cart-items thead,
+  .cart-items tbody,
+  .cart-items th,
+  .cart-items td,
+  .cart-items tr {
+    display: block;
     width: 100%;
   }
-  .order-summary {
-    max-width: unset;
-    width: 100%;
+
+  /* Hide header row for mobile */
+  .cart-items thead {
+    display: none;
+  }
+
+  /* Each product becomes its own mini card */
+  .cart-items tr {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  /* First line: image + name */
+  .cart-item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .cart-item-info img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+  }
+
+  .cart-item-info .prod-name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #333;
+  }
+
+  /* Second line: price + quantity */
+  .cart-item-details-line2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  /* Third line: total + delete */
+  .cart-item-details-line3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .cart-item-details-line3 .delete-btn {
+    background: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
   }
 }
 
@@ -2166,9 +2288,9 @@ textarea {
   }
 
   .stepper {
-    padding: 0;
+    padding: 5px;
     margin: 15px;
-    width: 12%;
+    width: 78%;
   }
 
   .stepper button {
@@ -2899,4 +3021,307 @@ textarea {
     font-weight: normal; 
     font-size: 14px;
     color: green; 
+}
+
+
+
+@media (max-width: 700px) {
+  /*
+  --- HEADER STYLES (Matching the two-row centered layout) ---
+  */
+  header {
+    /* Stacks title and nav vertically */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: white; 
+    /* Reduced horizontal padding for maximum link space */
+    padding: 10px 8px; 
+    height: auto;
+    width: 100%; 
+    overflow: visible;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  }
+
+  /* KUCAMPUSBITE text */
+  .site-title {
+    display: block; 
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--main-primary-color); 
+    margin: 5px 0 8px 0; /* Space between title and nav */
+  }
+
+  /* Hide desktop elements */
+  header h1,
+  header .logo img {
+    display: none;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* CRITICAL: Prevents links from wrapping */
+    justify-content: center; 
+    margin: 0; 
+    gap: 10px; /* Reduced space between links */
+    font-size: 13px; /* Reduced font size to ensure fit */
+    width: 100%; 
+  }
+  
+  /* Style the navigation links */
+  header nav a {
+    color: #555; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 0 1px; 
+  }
+
+  /* Ensure no images for navigation links are displayed if you're using icons/text */
+  header nav a img {
+      display: none; 
+  }
+
+  /* Adjust 'Pages' dropdown content */
+  .dropdown-content {
+      min-width: 100px;
+      font-size: 0.85rem; 
+      top: 100%; 
+      left: 50%;
+      transform: translateX(-50%); 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  /* Cart/Logout icons */
+  header nav .fa-shopping-cart,
+  header nav .fa-sign-out-alt {
+      font-size: 1rem; 
+  }
+  
+  /*
+  --- FOOTER STYLES (Matching the centered stacked layout) ---
+  */
+  footer {
+    padding: 2rem 1rem; 
+    text-align: center; /* Centers all text content */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* The main content wrapper (links, contact) */
+  .footer-1 {
+    flex-direction: column; /* Stacks the content sections (Quick Links, Contact Us) */
+    gap: 1.5rem; 
+    width: 90%; 
+  }
+
+  /* Center the text within each content section */
+  .footer-1 > div {
+    text-align: center;
+  }
+  
+  /* Quick Links title and text (using h4 and a tags) */
+  footer h4 { /* Quick Links, Contact Us titles */
+    font-size: 1.4rem; /* Slightly larger for visibility */
+    color: white; /* Contrast color */
+    margin-bottom: 0.75rem;
+  }
+
+  /* Links and other paragraphs */
+  footer a, footer p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin: 5px 0;
+  }
+  
+  /* Removes any horizontal separation from desktop links */
+  .links a {
+      margin-left: 0;
+  }
+  
+  /* Horizontal Rule (used to separate content from copyright) */
+  hr {
+      margin: 1.5rem 0;
+  }
+  
+  /* Copyright text */
+  .copyright-section {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #8c8c8c;
+  }
+}
+
+@media (max-width: 480px) {
+  /*
+  --- GLOBAL CONTAINER & CARD LAYOUT ---
+  */
+  .container {
+    width: 96%;
+    max-width: 400px; 
+    /* FIX: Reduced margin-top and set margin to auto for centering */
+    margin: 20px auto; 
+    padding: 0 8px;
+  }
+
+  .item-card {
+    height: auto; 
+    min-height: auto;
+    max-height: none; /* ESSENTIAL: Ensures the card expands to show all content */
+    width: 100%; 
+  }
+
+  .item-grid {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+  }
+  
+  /*
+  --- MEDIA/IMAGE SECTION ---
+  */
+  .media {
+    width: 100%;
+    height: 220px; 
+    padding: 10px;
+    margin: 0 auto; /* Centered the media block inside the card */
+  }
+
+  /*
+  --- DETAILS SECTION ---
+  */
+  .details {
+    padding: 1.5rem 1rem; 
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start; /* Stack content from the top */
+    height: auto; /* Allow height to expand */
+  }
+
+  h1#foodName {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .meta {
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .item-price {
+    font-size: 1.4rem;
+    margin: 0.5rem 0 1.5rem 0;
+  }
+  
+  .cta-row {
+    margin-top: 0; 
+    width: 100%;
+    align-items: center;
+    gap: 0; 
+  }
+
+  /* --- QTY Stepper FIX (The main fix for alignment) ---
+  */
+  .qty {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* ADJUSTMENT: Reduced vertical space from 15px to 10px */
+    width: 100%;
+  }
+
+  .stepper {
+    display: flex; /* CRITICAL: Fixes button/input alignment */
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--second-primary-color);
+    border-radius: 50px;
+    padding: 0;
+    width: 120px; /* Set a fixed, usable width */
+    height: 38px; /* Set a fixed height */
+  }
+
+  .stepper button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* CRITICAL: Removes margin that caused misalignment */
+  }
+
+  .stepper input {
+    -moz-appearance: textfield;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    width: 44px; /* Space for the number */
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* --- ADD TO CART BUTTON FIX (Ensures visibility) ---
+  */
+  .add-to-cart-btn {
+    width: 85%;
+    max-width: 300px;
+    padding: 14px;
+    font-size: 0.95rem;
+    margin: 0 auto 5px auto; /* ADJUSTMENT: Reduced top margin from 5px to 0 to minimize space */
+    display: block;
+  }
+
+  /* --- PRE-ORDER BUTTON ---
+  */
+  #preorderToggle {
+    width: 85%;
+    max-width: 300px;
+    margin: 5px auto; 
+    display: block;
+    font-size: 14px; 
+  }
+  
+  /* TIME SELECTION AREA */
+  #timeSelectionArea {
+    width: 85%;
+    max-width: 300px;
+    margin: 10px auto; 
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  
+  #showTimePicker, #deliveryTimeInput {
+    font-size: 13px; 
+    padding: 6px 10px;
+  }
+  
+  /* Recommended Items (Layout for horizontal scrolling) */
+  .food-slider {
+    width: 100%;
+  }
+
+  .item-food-grid {
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .food-card {
+    flex: 0 0 70%; 
+    max-width: 280px;
+  }
+  
+  .slide-btn {
+    display: none; 
+  }
+  
+  /* ... rest of the 480px styles ... */
 }
